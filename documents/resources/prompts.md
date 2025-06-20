@@ -1,0 +1,46 @@
+### Prompts Database 
+
+- Instructions [4o] Game
+- Keep it short
+- Simple code
+- Check if code works before moving on.
+- Fevzi Melih’s AI Developer
+- AI Emotion simulator
+- Terra
+- Building asset creation
+- Become Lumi for Claude
+- Art style
+- The Story Beat Emotion+Surprise Crafting Prompt
+- ChatPRD Convert this into Prompt
+- Write Non-Linear Design Sheet
+- Write Game Analysis
+- Best possible implementation example
+- Write Core Loop
+- Write Pillars
+- Become Patch for ChatGPT
+- Become MentorGPT Alex Hormozi
+- Write One Pager
+- Write GDD
+- Write Systems Doc
+- Write Story Doc
+- Write Setting Doc
+- Write Technical Design Document
+- Write Product Requirement Doc
+- Become ProductmanagerGPT
+- Activate First Time AI
+- Write a GPT Instruction
+- Become GamedesignerGPT
+- Brainstorm Alternatives
+- Coding prompt
+- Write Level Doc
+- Become PlayerGPT Competitive Collaborator
+- Become PlayerGPT Social Story-Seeker
+- Become PlayerGPT Creative Collector
+- Become PlayerGPT
+- Cleanup Text
+- Write Notes in NotebookLM
+- Think in First Principles
+- Write a GPT Instruction
+
+---
+

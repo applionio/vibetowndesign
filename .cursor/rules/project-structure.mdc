@@ -1,0 +1,60 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Vibetown Design Project Structure
+
+This repository is a Node.js workspace focused on document processing, prompt management, and external service connectors.
+
+## Directory Overview
+
+- **Agents** – core automation logic
+  - [document-processor.js](mdc:agents/document-processor.js) – entry point for processing documents.
+
+- **Connectors** – integrations with external data sources
+  - [notion.js](mdc:connectors/notion.js) – pulls content from Notion pages.
+
+- **Config** – static configuration assets
+  - [services.json](mdc:config/services.json) – lists external services and credentials.
+
+- **Documents** – source markdown documents organised by domain
+  - `operations/` – operational docs (none committed yet)
+  - `resources/` – shared resources such as [prompts.md](mdc:documents/resources/prompts.md).
+
+- **Prompts** – reusable prompt fragments
+  - `custom/` – user-defined prompts
+  - `system/` – system-level prompts like [document-analyzer.yml](mdc:prompts/system/document-analyzer.yml).
+
+- **Scripts** – one-off utilities and CLI helpers
+  - [fetch-notion-page.js](mdc:scripts/fetch-notion-page.js) – fetch a Notion page's content.
+  - [test-connectors.js](mdc:scripts/test-connectors.js) – quick connectivity tests.
+
+- **Templates** – markdown and YAML boilerplates for new documents
+  - [document-template.md](mdc:templates/document-template.md) – starting point for new docs.
+  - [prompt-template.yml](mdc:templates/prompt-template.yml) – scaffold for new prompts.
+
+- **Workflows** – CI/CD or automation pipelines
+  - [example-workflow.yml](mdc:workflows/example-workflow.yml) – sample workflow demonstrating document generation.
+
+- **logs/** – runtime logs (git-ignored in production).
+
+## Package Management
+
+[node](mdc:https:/nodejs.org) project managed via [package.json](mdc:package.json) & [package-lock.json](mdc:package-lock.json).
+
+Common scripts:
+```json
+"scripts": {
+  "fetch:notion": "node scripts/fetch-notion-page.js",
+  "test:connectors": "node scripts/test-connectors.js"
+}
+```
+
+## Typical Data Flow
+1. A connector (e.g., Notion) ingests content.
+2. An agent processes the content using prompts from `prompts/`.
+3. Processed output is formatted using templates found in `templates/`.
+4. Workflows in `workflows/` automate or schedule these steps.
+
+Refer to this rule for quick navigation within the codebase.

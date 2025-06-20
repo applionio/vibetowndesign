@@ -1,0 +1,87 @@
+{
+  "workspace": "VibeTown Design Workspace",
+  "last_updated": "2024-01-20",
+  "description": "Index of Notion content for AI documentation context",
+  
+  "categories": {
+    "projects": {
+      "description": "Active projects and initiatives",
+      "pages": [
+        {
+          "title": "Example Project",
+          "notion_id": "paste-notion-page-id-here",
+          "path": "/knowledge-base/notion-exports/projects/example-project.md",
+          "tags": ["active", "product", "2024"],
+          "last_modified": "2024-01-20",
+          "summary": "Brief summary of the project",
+          "key_sections": [
+            "Requirements",
+            "Technical Specifications",
+            "Timeline"
+          ]
+        }
+      ]
+    },
+    
+    "documentation": {
+      "description": "Technical and product documentation",
+      "pages": []
+    },
+    
+    "meeting_notes": {
+      "description": "Meeting notes and decisions",
+      "pages": []
+    },
+    
+    "templates": {
+      "description": "Document templates from Notion",
+      "pages": []
+    },
+    
+    "resources": {
+      "description": "Reference materials and guides",
+      "pages": []
+    }
+  },
+  
+  "databases": {
+    "tasks": {
+      "description": "Task tracking database",
+      "export_path": "/knowledge-base/databases/tasks.csv",
+      "last_exported": null,
+      "fields": ["Title", "Status", "Priority", "Assignee", "Due Date"]
+    },
+    
+    "projects": {
+      "description": "Projects database",
+      "export_path": "/knowledge-base/databases/projects.csv",
+      "last_exported": null,
+      "fields": ["Name", "Status", "Owner", "Start Date", "End Date"]
+    }
+  },
+  
+  "quick_links": {
+    "frequently_used": [
+      {
+        "title": "Add your frequently used Notion page",
+        "notion_url": "https://notion.so/...",
+        "local_path": null
+      }
+    ],
+    
+    "templates": [
+      {
+        "title": "PRD Template",
+        "notion_url": "https://notion.so/...",
+        "local_path": "/templates/prd-template.md"
+      }
+    ]
+  },
+  
+  "export_schedule": {
+    "daily": [],
+    "weekly": ["Active Projects", "Current Sprint Tasks"],
+    "monthly": ["All Documentation", "Meeting Notes Archive"],
+    "quarterly": ["Full Workspace Backup"]
+  }
+}

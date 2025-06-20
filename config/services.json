@@ -1,0 +1,53 @@
+{
+  "ai_services": {
+    "claude": {
+      "enabled": true,
+      "name": "Claude (Anthropic)",
+      "description": "Primary AI assistant for documentation and analysis",
+      "use_cases": [
+        "Documentation writing",
+        "Code documentation",
+        "Knowledge synthesis",
+        "Content analysis"
+      ]
+    },
+    "openai": {
+      "enabled": true,
+      "name": "ChatGPT/GPT-4",
+      "description": "Alternative AI for specific tasks",
+      "use_cases": [
+        "Creative writing",
+        "Brainstorming",
+        "Quick summaries"
+      ]
+    },
+    "perplexity": {
+      "enabled": true,
+      "name": "Perplexity AI",
+      "description": "Research and fact-checking",
+      "use_cases": [
+        "Research with citations",
+        "Fact verification",
+        "Current information lookup"
+      ]
+    }
+  },
+  "documentation_types": {
+    "technical": {
+      "description": "API docs, code documentation, technical guides",
+      "preferred_ai": "claude"
+    },
+    "product": {
+      "description": "PRDs, feature specs, user stories",
+      "preferred_ai": "claude"
+    },
+    "marketing": {
+      "description": "Blog posts, marketing copy, social media",
+      "preferred_ai": "openai"
+    },
+    "research": {
+      "description": "Market research, competitive analysis",
+      "preferred_ai": "perplexity"
+    }
+  }
+}

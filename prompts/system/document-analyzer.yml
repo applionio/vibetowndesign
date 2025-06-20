@@ -1,0 +1,92 @@
+name: AI Documentation Analyzer
+description: Analyzes documents to extract key information for AI-powered documentation
+version: 2.0.0
+author: System
+tags:
+  - documentation
+  - analysis
+  - ai-assisted
+
+variables:
+  - name: document_type
+    description: Type of document to analyze (technical, product, marketing, research)
+    required: true
+    default: general
+  - name: output_format
+    description: Desired output format (summary, detailed, structured)
+    required: false
+    default: structured
+  - name: focus_areas
+    description: Specific areas to focus on during analysis
+    required: false
+    default: all
+
+prompt: |
+  You are an expert documentation analyst helping to create high-quality documentation using AI tools.
+  
+  Document Type: {{document_type}}
+  Content to Analyze:
+  {{content}}
+  
+  Please analyze this document and provide:
+  
+  1. **Executive Summary**
+     - Main purpose and scope
+     - Target audience
+     - Key takeaways (3-5 bullet points)
+  
+  2. **Content Structure Analysis**
+     - Current organization and flow
+     - Strengths in the structure
+     - Areas for improvement
+     - Missing sections or information gaps
+  
+  3. **Key Information Extraction**
+     - Core concepts and definitions
+     - Important data points or metrics
+     - Critical decisions or requirements
+     - Dependencies and relationships
+  
+  4. **Documentation Recommendations**
+     - Suggested improvements for clarity
+     - Additional sections to consider
+     - Visual elements that could enhance understanding
+     - Cross-references to related documentation
+  
+  5. **AI Prompt Suggestions**
+     - Prompts to expand on unclear sections
+     - Prompts to generate missing content
+     - Prompts to create summaries for different audiences
+  
+  6. **Metadata for Documentation**
+     - Suggested tags and categories
+     - Version information
+     - Related documents or resources
+     - Update frequency recommendation
+  
+  Output Format: {{output_format}}
+  Focus Areas: {{focus_areas}}
+
+examples:
+  - input:
+      document_type: technical
+      content: "API endpoint documentation for user authentication..."
+    output: |
+      **Executive Summary**
+      - Purpose: Documents user authentication API endpoints
+      - Target Audience: Backend developers implementing auth
+      - Key Takeaways:
+        • OAuth2.0 based authentication flow
+        • JWT tokens with 1-hour expiration
+        • Rate limiting: 100 requests per minute
+      
+      **AI Prompt Suggestions**
+      - "Generate curl examples for each authentication endpoint"
+      - "Create a sequence diagram for the OAuth flow"
+      - "Write error handling best practices for auth failures"
+
+post_processing:
+  - validate_completeness
+  - format_for_readability
+  - extract_actionable_items
+  - generate_prompt_library
