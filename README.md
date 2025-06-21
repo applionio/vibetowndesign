@@ -1,127 +1,54 @@
-# VibeTown Design - AI Documentation Hub
+# 🗂️ Product & Game Design Workspace
 
-A structured system for managing AI-powered documentation, prompts, and knowledge management.
+A streamlined repository focused on documentation for product management and game design. All code-specific files have been removed so you can concentrate purely on strategy, requirements, and creative design.
 
-## 🎯 Purpose
+## 📁 Folder Structure
 
-This repository helps you:
-- Organize and version control AI prompts for various documentation needs
-- Maintain a knowledge base for AI interactions
-- Create consistent documentation using AI tools efficiently
-- Track and optimize your AI usage patterns
+```text
+docs/                       # Main documentation hub
+├── design/                 # Game design documentation
+│   └── levels/             # Level design docs
+├── product/                # Product-management material
+│   └── operations/         # Processes, runbooks, how-tos
+├── resources/              # Reference material & external guides
+│   └── ai-tools/           # Guides for leveraging AI tools
+├── prompts/                # Prompt libraries for AI workflows
+│   ├── custom/             # Your custom prompts
+│   └── system/             # Core/system prompts
+├── templates/              # Document & prompt templates
+├── meetings/               # Meeting notes & agendas
+└── knowledge-base/         # Notion exports or other context docs
 
-## 📁 Project Structure
-
-```
-vibetowndesign/
-├── ai-tools/         # AI service configurations and usage guides
-├── prompts/          # Prompt templates and libraries
-│   ├── system/      # Core system prompts for different AI tools
-│   └── custom/      # Your custom prompts organized by use case
-├── documents/        # Your documentation
-│   ├── operations/  # Process docs, guides, runbooks
-│   └── resources/   # Reference materials and research
-├── templates/        # Document templates for consistency
-├── knowledge-base/   # Reference materials for AI context
-├── outputs/         # AI-generated content archive
-├── workflows/       # Documentation workflow definitions
-├── config/          # Configuration files
-├── game-content/    # Game-related content (separate project)
-└── logs/           # Usage logs and metrics (gitignored)
+config/                     # Workspace configuration files (non-code)
+outputs/                    # Generated deliverables & exports
+logs/                       # Git-ignored logs/metrics (optional)
 ```
 
 ## 🚀 Getting Started
 
-### 1. Set Up Your Prompt Library
+1. Browse `docs/design/` and `docs/product/` to explore existing material.
+2. Capture new ideas or specs using the templates in `docs/templates/`.
+3. Store helpful references in `docs/resources/` for quick access.
+4. Keep AI prompts organised inside `docs/prompts/`.
+5. Export final deliverables (e.g.
+   pitch decks, GDD extracts) to `outputs/`.
+6. Refer to `guides/notion-guide.yml` for Notion AI integration commands.
 
-Create prompts in the `prompts/` directory organized by type:
-- Technical documentation prompts
-- Product specification prompts
-- Marketing content prompts
-- Research and analysis prompts
+## 🧹 Workspace Neatness
 
-### 2. Document Templates
+- Keep the repository simple, clean and clutter-free.
+- Group similar guides or reference files into dedicated folders (e.g., `guides/`).
+- Remove redundant or outdated files promptly.
+- Prefer relative links that reflect the folder structure.
 
-Use templates in `templates/` for consistent formatting:
-- PRD template
-- API documentation template
-- User guide template
-- Blog post template
+## Recommended Workflow
 
-### 3. AI Tool Configuration
-
-Check `config/services.json` for recommended AI tools for different tasks.
-
-## 📝 Best Practices
-
-### Prompt Management
-1. **Version Control**: Track changes to prompts over time
-2. **Test and Iterate**: Record what works and what doesn't
-3. **Context Building**: Maintain context documents in `knowledge-base/`
-4. **Reusability**: Create modular prompts that can be combined
-
-### Documentation Workflow
-1. **Planning**: Define the documentation goal
-2. **Context Gathering**: Collect relevant information
-3. **Prompt Selection**: Choose or create appropriate prompts
-4. **Generation**: Use AI tools with structured prompts
-5. **Review & Edit**: Always review AI-generated content
-6. **Archive**: Save outputs for future reference
-
-### AI Tool Selection Guide
-
-| Task Type | Recommended Tool | Why |
-|-----------|-----------------|-----|
-| Technical Docs | Claude | Better at maintaining accuracy and structure |
-| Creative Content | ChatGPT | More creative and varied outputs |
-| Research | Perplexity | Provides sources and citations |
-| Code Documentation | Claude | Superior code understanding |
-
-## 📊 Tracking AI Usage
-
-Consider tracking:
-- Which prompts work best for different tasks
-- Time saved using AI assistance
-- Quality metrics for generated content
-- Cost optimization strategies
-
-## 🔧 Prompt Examples
-
-### Technical Documentation
-```markdown
-Create comprehensive API documentation for [endpoint].
-Include: purpose, parameters, response format, examples, error codes.
-Style: Clear, concise, developer-friendly.
-```
-
-### Product Specification
-```markdown
-Write a PRD section for [feature].
-Include: user story, acceptance criteria, technical requirements.
-Context: [provide context]
-```
-
-## 🗂️ Organization Tips
-
-1. **Naming Convention**: Use descriptive names like `prompt-api-docs-v2.md`
-2. **Metadata**: Include creation date and purpose in prompt files
-3. **Categories**: Organize prompts by department/use case
-4. **Templates**: Create fill-in-the-blank templates for common tasks
-
-## 📈 Continuous Improvement
-
-- Regularly review and update prompts based on results
-- Share successful prompts with your team
-- Document lessons learned in `knowledge-base/`
-- Create prompt chains for complex documentation tasks
-
-## 🔐 Security Notes
-
-- Never include sensitive data in prompts
-- Review AI outputs for accuracy before publishing
-- Keep proprietary information in private knowledge base
-- Use `.gitignore` for any sensitive configurations
+1. **Kick-off** – Draft a high-level concept in `docs/design/`.
+2. **Scope & Requirements** – Flesh out PRDs in `docs/product/`.
+3. **Iterate** – Use AI prompts to draft, refine and review content.
+4. **Review** – Share docs via pull requests for feedback.
+5. **Archive** – Move approved versions to `outputs/` and tag releases.
 
 ---
 
-*This system helps you leverage AI tools effectively for all your documentation needs while maintaining quality and consistency.*
+Happy designing! If you need additional structure, create sub-folders as your project grows.
