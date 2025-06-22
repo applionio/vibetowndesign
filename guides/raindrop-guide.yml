@@ -1,0 +1,63 @@
+#%YAML 1.2
+---
+meta:
+  title: "Raindrop.io Quick Guide"
+  version: "1.1"
+  last_updated: "2025-06-22"
+  purpose: "Fast reference for essential Raindrop MCP commands + common gotchas"
+
+basics:
+  remember_first:
+    - "Every collection or bookmark is referenced by its numeric ID."
+    - "Deletion is permanent—double-check IDs before running destructive commands."
+    - "If a command returns 404, the item probably doesn't exist or the query is empty."
+
+core_commands:
+  collections:
+    list: "List all root collections"
+    get: "Show details of a collection (needs collectionId)"
+    create: "Make a new collection titled [Name]"
+    rename: "Rename collection [ID] to [New Name]"
+    delete: "Delete collection [ID] (moves items to Unsorted)"
+  bookmarks:
+    save: "Save https://example.com to collection [ID] with tags: tag1, tag2"
+    info: "Show details of bookmark [ID]"
+    update: "Change title/tags/move bookmark [ID]"
+    search: "Search 'react' in collection [ID] (needs non-empty query)"
+    batch: "Move or tag many bookmarks at once (takes list of IDs)"
+  tags:
+    list: "List all tags (or inside collection [ID])"
+    rename: "Rename tag old→new"
+  highlights:
+    list: "List highlights globally or for bookmark [ID]"
+    add: "Add highlight 'Important quote' to bookmark [ID]"
+    remove: "Delete highlight [ID]"
+  reminders:
+    set: "Remind me on 2025-07-01 for bookmark [ID]"
+    clear: "Remove reminder from bookmark [ID]"
+
+examples:
+  - "List collections → collections.list"
+  - "Save https://design.dev to Inbox with tags: css, read-later → bookmarks.save"
+  - "Bulk move 10 bookmarks to Resources → bookmarks.batch"
+  - "Rename tag 'frontend' to 'web' → tags.rename"
+
+real_world_results:
+  - action: collections.list
+    output: [Inbox, Resources, Projects, Areas]
+  - action: bookmarks.search
+    result: "404 when query is empty or collection has no items—add a keyword or check collection"
+  - action: highlights.list
+    result: "0 highlights (account had none yet)"
+
+troubleshooting:
+  - "404? Confirm the ID or include a query string."
+  - "Need to filter dates? Use search with createdStart / createdEnd."
+  - "No output after save? The URL might be unreachable—try another link."
+
+cheat_sheet_ids:
+  Inbox: 56795736
+  Resources: 56795722
+  Projects: 56795703
+  Areas: 56795692
+... 

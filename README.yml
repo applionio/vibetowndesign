@@ -1,0 +1,44 @@
+# Product & Game Design Workspace – YAML version
+
+title: "Product & Game Design Workspace"
+description: |
+  A streamlined repository focused on documentation for product management and game
+  design. All code-specific files have been removed so you can concentrate purely on
+  strategy, requirements, and creative design.
+
+folder_structure:
+  ai-tools: "Experimental AI utilities and scripts"
+  game-design: "Game design documentation (levels, mechanics, narratives)"
+  product-docs: "Product-management material (PRDs, roadmaps, runbooks)"
+  guides: "Reference guides for tools & integrations (YAML format)"
+  prompts: "Prompt libraries for AI workflows"
+  templates: "Document & prompt templates"
+  workflows: "GitHub or CI workflow files"
+  logs: "Git-ignored logs / metrics (optional)"
+  outputs: "Generated deliverables & exports"
+  README.yml: "Workspace overview (this file)"
+
+going_started:
+  - "Explore initial concepts in `game-design/` and requirements in `product-docs/`."
+  - "Capture new ideas or specs using the templates in `templates/`."
+  - "Store helpful references in `product-docs/resources/` for quick access."
+  - "Keep AI prompts organised inside `prompts/`."
+  - "Save final deliverables (e.g. pitch decks, GDD extracts) to `outputs/` (create if missing)."
+  - "Refer to `guides/notion-guide.yml` and other guides in `guides/` for tool commands."
+
+workspace_neatness:
+  - "Keep the repository simple, clean and clutter-free."
+  - "Group similar guides or reference files into dedicated folders (e.g., `guides/`)."
+  - "Remove redundant or outdated files promptly."
+  - "Prefer relative links that reflect the folder structure."
+
+recommended_workflow:
+  - "Kick-off – Draft a high-level concept in `game-design/`."
+  - "Scope & Requirements – Flesh out PRDs in `product-docs/`."
+  - "Iterate – Use prompts in `prompts/` to draft, refine and review content."
+  - "Review – Share docs via pull requests for feedback."
+  - "Archive – Move approved versions to `outputs/` and tag releases."
+
+note: |
+  Happy designing! If you need additional structure, create sub-folders as your
+  project grows.
