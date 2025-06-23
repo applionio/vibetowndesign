@@ -49,3 +49,6 @@ secrets/
 # Cache
 .cache/
 *.cache
+
+# Python
+.venv/

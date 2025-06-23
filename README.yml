@@ -7,37 +7,43 @@ description: |
   strategy, requirements, and creative design.
 
 folder_structure:
-  ai-tools: "Experimental AI utilities and scripts"
-  game-design: "Game design documentation (levels, mechanics, narratives)"
-  product-docs: "Product-management material (PRDs, roadmaps, runbooks)"
-  guides: "Reference guides for tools & integrations (YAML format)"
-  prompts: "Prompt libraries for AI workflows"
-  templates: "Document & prompt templates"
-  workflows: "GitHub or CI workflow files"
-  logs: "Git-ignored logs / metrics (optional)"
-  outputs: "Generated deliverables & exports"
-  README.yml: "Workspace overview (this file)"
+  ai-tools: "Tools and guides for working with AI in documentation."
+  guides: "Reference guides for tools & integrations (e.g., Notion, Linear)."
+  prompts: "Prompt libraries for AI workflows, categorized into custom and system prompts."
+  templates: "Document, prompt, and game design templates."
+  workflows: "Workflow definitions and automation scripts."
+  logs: "Git-ignored logs / metrics (optional)."
+  outputs: "Generated deliverables & exports."
+  README.yml: "Workspace overview (this file)."
 
-going_started:
-  - "Explore initial concepts in `game-design/` and requirements in `product-docs/`."
-  - "Capture new ideas or specs using the templates in `templates/`."
-  - "Store helpful references in `product-docs/resources/` for quick access."
-  - "Keep AI prompts organised inside `prompts/`."
-  - "Save final deliverables (e.g. pitch decks, GDD extracts) to `outputs/` (create if missing)."
-  - "Refer to `guides/notion-guide.yml` and other guides in `guides/` for tool commands."
+getting_started:
+  - "Explore the project structure to understand where different types of content are located."
+  - "Review the `ai-tools/getting-started.yml` for an overview of using AI in this project."
+  - "Check the `guides/` for specific instructions on using tools like Notion and Linear."
+  - "Use the templates in `templates/` to create new documents, prompts, or game design docs."
+
+running_the_level_generator:
+  - "Navigate to the project root directory in your terminal."
+  - "Create a virtual environment (first time only): `python3 -m venv .venv`"
+  - "Activate the environment: `source .venv/bin/activate` (on macOS/Linux)"
+  - "Install dependencies (first time only): `pip install -r workflows/level-generator/requirements.txt`"
+  - "Run the script: `python workflows/level-generator/generate_level.py`"
+  - "Follow the prompts. The output will be saved in the `outputs/` directory."
 
 workspace_neatness:
   - "Keep the repository simple, clean and clutter-free."
-  - "Group similar guides or reference files into dedicated folders (e.g., `guides/`)."
+  - "Group similar files into dedicated folders."
+  - "Place all automation scripts in a dedicated subfolder within `workflows/`."
+  - "Ensure all documentation is in YAML format."
   - "Remove redundant or outdated files promptly."
   - "Prefer relative links that reflect the folder structure."
 
 recommended_workflow:
-  - "Kick-off – Draft a high-level concept in `game-design/`."
-  - "Scope & Requirements – Flesh out PRDs in `product-docs/`."
-  - "Iterate – Use prompts in `prompts/` to draft, refine and review content."
-  - "Review – Share docs via pull requests for feedback."
-  - "Archive – Move approved versions to `outputs/` and tag releases."
+  - "Concept – Use the automated level generator to create and refine level ideas."
+  - "Specification – Use `templates/document-template.yml` to create detailed specifications."
+  - "Content Creation – Use prompts from `prompts/` to generate content with AI assistance."
+  - "Review – Share documents for feedback."
+  - "Archive – Move final versions to `outputs/`."
 
 note: |
   Happy designing! If you need additional structure, create sub-folders as your
