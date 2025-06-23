@@ -1,0 +1,1 @@
+Thank you but I think it missess something. Can you please make it like a viral tiktok video hook. Also people got bored of long text

@@ -1,0 +1,82 @@
+title: "The Aha! Framework for Product Development"
+
+summary: >
+The Aha! Framework blends long-range strategic planning with rapid, value-first delivery so teams ship improvements customers truly love—often on a daily cadence.
+
+comparison:
+MLP_principles:
+- "Goal: disrupt"
+- "Problem: can be understood"
+- "Customers know what they want"
+- "Many product alternatives exist"
+- "Make architecture decisions because tech is stable"
+- "Dedicated effort is impossible"
+- "Focus on delivering loveable value"
+- "Customers love your product"
+MVP_principles:
+- "Goal: increment"
+- "Problem: cannot be understood"
+- "Customers do not know what they want"
+- "Few product alternatives exist"
+- "Avoid architecture decisions because tech is unstable"
+- "Lean effort is acceptable"
+- "Learn because success is unlikely"
+- "Customers tolerate your product"
+
+activities:
+
+- stage: "Strategize"
+cadence: "Semi-annual"
+activities:
+    - "Define product vision"
+    - "Review market conditions"
+    - "Draft product goals"
+    - "Identify key initiatives"
+    - "Gather feedback & set strategy"
+- stage: "Discover"
+cadence: "Weekly"
+steps:
+    - "Define research goals"
+    - "Identify audience & schedule interviews"
+    - "Conduct interviews & analyze transcripts"
+    - "Link insights to initiatives, ideas, and features"
+- stage: "Capture"
+cadence: "Weekly"
+steps:
+    - "Review customer and colleague ideas"
+    - "Score ideas for value vs. effort"
+    - "Promote top ideas to roadmap features"
+- stage: "Explore"
+cadence: "Rapid concepting"
+steps:
+    - "Whiteboard experiences"
+    - "Wireframe"
+    - "Gather feedback"
+    - "Refine concepts"
+- stage: "Plan"
+cadence: "Weekly"
+steps:
+    - "Draft roadmap"
+    - "Scope & score features"
+    - "Update roadmap"
+- stage: "Showcase"
+cadence: "Monthly"
+description: "Stakeholder alignment—share roadmap, gather feedback, finalize"
+- stage: "Build"
+cadence: "Continuous (Agile + MLP)"
+steps:
+    - "Focus on highest-scoring features"
+    - "Complete designs & confirm MLP requirements"
+    - "Organize sprints/kanban and develop"
+    - "Ship functionality & communicate progress weekly"
+- stage: "Document"
+cadence: "Weekly"
+description: "Update knowledge base with guides, FAQs, and best practices"
+- stage: "Launch"
+cadence: "Weekly"
+description: "Go-to-market kick-off and announce new functionality"
+- stage: "Analyze & Improve"
+cadence: "Continuous"
+steps:
+    - "Measure adoption & value against goals"
+    - "Run retrospectives to refine the overall process"

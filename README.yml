@@ -21,14 +21,8 @@ getting_started:
   - "Review the `ai-tools/getting-started.yml` for an overview of using AI in this project."
   - "Check the `guides/` for specific instructions on using tools like Notion and Linear."
   - "Use the templates in `templates/` to create new documents, prompts, or game design docs."
-
-running_the_level_generator:
-  - "Navigate to the project root directory in your terminal."
-  - "Create a virtual environment (first time only): `python3 -m venv .venv`"
-  - "Activate the environment: `source .venv/bin/activate` (on macOS/Linux)"
-  - "Install dependencies (first time only): `pip install -r workflows/level-generator/requirements.txt`"
-  - "Run the script: `python workflows/level-generator/generate_level.py`"
-  - "Follow the prompts. The output will be saved in the `outputs/` directory."
+  - "For level generation, ask Cascade to generate a level with a character name and location."
+  - "Cascade will follow the workflow documented in `workflows/level-generation/README.md`."
 
 workspace_neatness:
   - "Keep the repository simple, clean and clutter-free."

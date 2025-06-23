@@ -1,0 +1,147 @@
+prd_template:
+title: "Aha! Product Requirements Document (PRD) Template"
+last_updated: "2025-02"
+
+definition: >
+A Product Requirements Document (PRD) explains *what* you are building,
+*who* it is for, and *why* it matters, so cross-functional teams can align
+from discovery through launch and deliver real customer value.
+
+why_use:
+- "Standardizes how product details are captured and shared."
+- "Aligns product, engineering, design, and GTM teams on goals and timing."
+- "Reduces ambiguity, rework, and version drift by documenting decisions."
+
+components:            # high-level building blocks to include somewhere in the doc
+overview:            # basics of the release / feature
+description: "Status, team members, release date, and elevator pitch."
+objective:
+description: "Strategic alignment to company goals or initiatives."
+context:
+description: "Personas, use cases, market insights, competitive landscape."
+assumptions:
+description: "Hypotheses or constraints that might influence dev work."
+scope:
+description: "In-scope priorities and explicitly out-of-scope items."
+requirements:
+description: "User stories, wireframes, acceptance criteria."
+performance:
+description: "Success metrics and KPIs."
+open_questions:
+description: "Known unknowns and research still required."
+
+steps_to_write_prd:    # repeatable 10-step process with guiding questions
+- step: 1
+name: "Define the basics"
+purpose: "Capture the essential facts everyone needs up front."
+questions:
+- "What are you building? What is the one-sentence elevator pitch?"
+- "Who is on the team (PM, dev, design, QA, stakeholders)?"
+- "When is the target release date?"
+- "What is the current status (on track, at risk, blocked)?"
+- step: 2
+name: "Capture strategy"
+purpose: "Show why this matters and how it ties to goals."
+questions:
+- "What are you trying to achieve with this release?"
+- "What value will it create for users and the business?"
+- "How does it support product / company goals?"
+- step: 3
+name: "Offer context"
+purpose: "Give the team enough background to make great decisions."
+questions:
+- "What informed this release (market trends, customer interviews)?"
+- "Who are the target personas?"
+- "What use-cases have been identified?"
+- "Are there future roadmap plans worth flagging now?"
+- step: 4
+name: "List assumptions"
+purpose: "Surface hypotheses and potential blockers early."
+questions:
+- "What business, technical, or resourcing hypotheses are we making?"
+- "How might these assumptions affect development?"
+- step: 5
+name: "Detail requirements"
+purpose: "Describe problems to solve and must-have functionality."
+questions:
+- "What problems are we solving?"
+- "What features or user stories will ship?"
+- "What is the priority of each item?"
+- step: 6
+name: "Include design"
+purpose: "Paint a clear picture of user experience."
+questions:
+- "What will it look and feel like?"
+- "How will users interact with the new functionality?"
+- "Do we have wireframes or mock-ups to share?"
+- step: 7
+name: "Provide metrics"
+purpose: "Define how success will be measured."
+questions:
+- "What are the test cases?"
+
+- "What’s observable test case on field? (at which moment what actions & reactions do we expect from testers or users?)" 
+- "How will we determine the value delivered?"
+- step: 8
+name: "Consider impact"
+purpose: "Reveal dependencies and downstream effects."
+questions:
+- "Are there known dependencies?"
+- "What other product areas will be affected?"
+- "What level of ongoing maintenance or support is expected?"
+- step: 9
+name: "Outline scope"
+purpose: "Clarify what is *not* included to prevent scope creep."
+questions:
+- "What will *not* be built in this release?"
+- step: 10
+name: "Make room for questions"
+purpose: "Track unknowns so they get answered, not lost."
+questions:
+- "Which questions can we anticipate now?"
+- "What outstanding questions remain?"
+- "What additional research is needed?"
+
+template_variants:     # three ready-made layouts you can choose from
+presentation_template:
+includes:
+- Product_name
+- Vision
+- Description
+- Team
+- Timing
+- Status
+- Background
+- Strategic_imperatives
+- Metrics
+- Personas
+- Use_cases
+- Assumptions
+- Investment_required
+- Product_architecture_and_components
+- Core_features
+- UX_UI
+- Acceptance_criteria
+- Scope
+- Open_questions
+lean_prd_template:
+includes:
+- Objective
+- Background_and_assumptions
+- Features_or_user_stories
+- User_experience
+- Constraints_and_dependencies
+- Open_questions
+release_requirements_template:
+includes:
+- Name
+- Target_release_date
+- Status
+- Overview
+- Team
+- Strategic_alignment
+- Personas
+- Features
+- Milestones
+- Dependencies
+- Notes
