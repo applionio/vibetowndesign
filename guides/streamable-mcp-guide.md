@@ -1,135 +1,280 @@
 # Streamable MCP Server Guide
 
-**Updated:** 2025-06-22
+**Updated:** 2025-01-25 (Version 3.0)
 
 **Overview:**
-`streamable-mcp-server` is an MCP server that exposes Chrome-automation tools for AI agents. Typical tasks: bookmark management, navigation & DOM interaction, scraping, screenshots, network capture, history & tab control.
+`streamable-mcp-server` is an MCP server that exposes Chrome-automation tools for AI agents. Common tasks include: navigation, DOM interaction, scrolling, screenshots, network capture, bookmark management, and tab control.
 
-## Bookmark Workflow
+## 🚀 Quick Start
 
-### Actions
+### Essential Tools You'll Use Most:
+1. `mcp_streamable-mcp-server_chrome_navigate` - Navigate to URLs
+2. `mcp_streamable-mcp-server_chrome_inject_script` - **CRITICAL: Used for scrolling and DOM manipulation**
+3. `mcp_streamable-mcp-server_chrome_screenshot` - Capture page state
+4. `mcp_streamable-mcp-server_chrome_get_web_content` - Extract page content
+5. `mcp_streamable-mcp-server_chrome_click_element` - Interact with elements
 
-#### Add
-- **Tool:** `mcp7_chrome_bookmark_add`
-- **Minimal Parameters:** `[url, title, parentId?, createFolder?]`
-- **Example:**
-  ```json
-  {
-    "tool": "mcp7_chrome_bookmark_add",
-    "parameters": {
-      "url": "https://example.com",
-      "title": "Example",
-      "parentId": "Bookmarks Bar/Docs",
-      "createFolder": true
-    }
-  }
-  ```
+## 📜 Scrolling (JavaScript Injection Only)
 
-#### Delete
-- **Tool:** `mcp7_chrome_bookmark_delete`
-- **Minimal Parameters:** `[bookmarkId]` or `(url + title)`
-- **Example:**
-  ```json
-  {
-    "tool": "mcp7_chrome_bookmark_delete",
-    "parameters": { "bookmarkId": "1207" }
-  }
-  ```
+**⚠️ IMPORTANT:** Scrolling ONLY works reliably through JavaScript injection. Keyboard methods (PageDown, ArrowKeys) do NOT work.
 
-#### Search
-- **Tool:** `mcp7_chrome_bookmark_search`
-- **Minimal Parameters:** `[query, folderPath?, maxResults?]`
-- **Example:**
-  ```json
-  {
-    "tool": "mcp7_chrome_bookmark_search",
-    "parameters": {
-      "query": "",
-      "maxResults": 1000
-    }
-  }
-  ```
+### Basic Scrolling Commands
 
-## Navigation & Interaction
+All scrolling must use `mcp_streamable-mcp-server_chrome_inject_script` with `type: "MAIN"`:
 
-**Tools:**
-- `mcp7_chrome_navigate`: Open URL or refresh tab
-- `mcp7_chrome_click_element`: Click by selector or coordinates
-- `mcp7_chrome_fill_or_select`: Fill inputs / select options
-- `mcp7_chrome_keyboard`: Send key presses
-- `mcp7_chrome_get_interactive_elements`: List clickable elements with coords
-- `mcp7_chrome_go_back_or_forward`: Navigate browser history
-
-**Example:**
-```javascript
-// Navigate then click first story on HackerNews
-{"tool":"mcp7_chrome_navigate","parameters":{"url":"https://news.ycombinator.com"}}
-{"tool":"mcp7_chrome_click_element","parameters":{"selector":"a.storylink:first-of-type"}}
-```
-
-## Scraping & Screenshot
-
-**Tools:**
-- `mcp7_chrome_get_web_content`: Fetch HTML or visible text
-- `mcp7_chrome_screenshot`: Capture full-page or element screenshot
-
-**Example:**
 ```json
-{"tool":"mcp7_chrome_get_web_content","parameters":{"selector":"h1","htmlContent":false}}
+// Scroll down by pixels
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "window.scrollBy(0, 500); // Scrolls down 500 pixels"
+  }
+}
+
+// Scroll to specific position
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "window.scrollTo(0, 1000); // Scrolls to 1000px from top"
+  }
+}
+
+// Scroll to bottom of page
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "window.scrollTo(0, document.body.scrollHeight);"
+  }
+}
+
+// Scroll to top of page
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "window.scrollTo(0, 0);"
+  }
+}
 ```
 
-## Network & Debugging
+### Verifying Scroll Works - Visual Confirmation
 
-- **Capture WebRequest:** `mcp7_chrome_network_capture_start` / `stop` (no response bodies)
-- **Capture Debugger:** `mcp7_chrome_network_debugger_start` / `stop` (includes bodies)
+To confirm scrolling is working, inject a visual indicator:
 
-## History & Tabs
+```json
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "// Create scroll position indicator\nconst indicator = document.createElement('div');\nindicator.id = 'scroll-pos';\nindicator.style.cssText = 'position:fixed;top:20px;right:20px;background:#000;color:#fff;padding:10px;z-index:999999;font-family:monospace;';\nindicator.textContent = 'Scroll: 0px';\ndocument.body.appendChild(indicator);\n\n// Update on scroll\nwindow.addEventListener('scroll', () => {\n  indicator.textContent = 'Scroll: ' + window.pageYOffset + 'px';\n});"
+  }
+}
+```
 
-**Tools:**
-- `mcp7_chrome_history`: Query browsing history
-- `mcp7_chrome_close_tabs`: Close tabs by id or URL
-- `mcp7_get_windows_and_tabs`: Inspect open windows / tabs
+### Common Scrolling Patterns
 
-## Best Practices
+```json
+// Smooth scrolling
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "window.scrollTo({ top: 1000, behavior: 'smooth' });"
+  }
+}
 
-- Explain first, act second – state purpose before tool call.
-- Be idempotent – search before add/delete.
-- Limit results – tune `maxResults` to keep responses small.
-- Prefer selectors over coordinates for clicks.
-- Avoid destructive automation without confirmation.
-- Chunk related calls to reduce tool-overhead.
+// Scroll to element
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "document.querySelector('#section-id').scrollIntoView();"
+  }
+}
 
-## Troubleshooting
+// Get current scroll position
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "console.log('Current scroll:', window.pageYOffset);"
+  }
+}
+```
 
-- **Symptom:** "No bookmark found when deleting"
-  - **Cause:** Wrong id/url
-  - **Fix:** Search first and ensure id matches
-- **Symptom:** "timeout on click"
-  - **Cause:** Selector missing or page still loading
-  - **Fix:** Increase timeout or wait and re-query elements
-- **Symptom:** "Empty textContent from get_web_content"
-  - **Cause:** Element hidden/outside viewport
-  - **Fix:** Use `htmlContent:true` or scroll first
+## 🌐 Navigation & Basic Interaction
 
-## Reference Tools
+### Navigate to URL
+```json
+{
+  "tool": "mcp_streamable-mcp-server_chrome_navigate",
+  "parameters": {
+    "url": "https://example.com"
+  }
+}
+```
 
-- `mcp7_chrome_bookmark_add`
-- `mcp7_chrome_bookmark_delete`
-- `mcp7_chrome_bookmark_search`
-- `mcp7_chrome_click_element`
-- `mcp7_chrome_close_tabs`
-- `mcp7_chrome_fill_or_select`
-- `mcp7_chrome_get_interactive_elements`
-- `mcp7_chrome_get_web_content`
-- `mcp7_chrome_go_back_or_forward`
-- `mcp7_chrome_history`
-- `mcp7_chrome_keyboard`
-- `mcp7_chrome_navigate`
-- `mcp7_chrome_network_capture_start`
-- `mcp7_chrome_network_capture_stop`
-- `mcp7_chrome_network_debugger_start`
-- `mcp7_chrome_network_debugger_stop`
-- `mcp7_chrome_network_request`
-- `mcp7_chrome_screenshot`
-- `mcp7_get_windows_and_tabs`
-- `mcp7_search_tabs_content`
+### Click Elements
+```json
+// Click by selector
+{
+  "tool": "mcp_streamable-mcp-server_chrome_click_element",
+  "parameters": {
+    "selector": "button.submit"
+  }
+}
+
+// Click by coordinates
+{
+  "tool": "mcp_streamable-mcp-server_chrome_click_element",
+  "parameters": {
+    "coordinates": { "x": 100, "y": 200 }
+  }
+}
+```
+
+### Fill Forms
+```json
+{
+  "tool": "mcp_streamable-mcp-server_chrome_fill_or_select",
+  "parameters": {
+    "selector": "input#email",
+    "value": "user@example.com"
+  }
+}
+```
+
+## 📸 Screenshots & Content Extraction
+
+### Take Screenshot
+```json
+// Visible viewport only
+{
+  "tool": "mcp_streamable-mcp-server_chrome_screenshot",
+  "parameters": {
+    "fullPage": false,
+    "storeBase64": true
+  }
+}
+```
+
+### Get Page Content
+```json
+// Get text content
+{
+  "tool": "mcp_streamable-mcp-server_chrome_get_web_content",
+  "parameters": {
+    "textContent": true
+  }
+}
+```
+
+## 🔖 Bookmark Management
+
+### Search Bookmarks
+```json
+{
+  "tool": "mcp_streamable-mcp-server_chrome_bookmark_search",
+  "parameters": {
+    "query": "docs",
+    "maxResults": 50
+  }
+}
+```
+
+### Add Bookmark
+```json
+{
+  "tool": "mcp_streamable-mcp-server_chrome_bookmark_add",
+  "parameters": {
+    "url": "https://example.com",
+    "title": "Example Site",
+    "parentId": "Bookmarks Bar"
+  }
+}
+```
+
+## 💡 Complete Example: Scrolling Through a Page
+
+Here's a full workflow showing how to navigate, add scroll indicator, and scroll:
+
+```json
+// 1. Navigate to a long page
+{
+  "tool": "mcp_streamable-mcp-server_chrome_navigate",
+  "parameters": {
+    "url": "https://en.wikipedia.org/wiki/JavaScript"
+  }
+}
+
+// 2. Add visual scroll indicator
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "const div = document.createElement('div');\ndiv.style.cssText = 'position:fixed;top:10px;right:10px;background:red;color:white;padding:10px;z-index:9999';\ndiv.id = 'scroll-indicator';\ndiv.textContent = 'Position: 0';\ndocument.body.appendChild(div);\nwindow.addEventListener('scroll', () => {\n  div.textContent = 'Position: ' + Math.round(window.pageYOffset) + 'px';\n});"
+  }
+}
+
+// 3. Scroll down 500 pixels
+{
+  "tool": "mcp_streamable-mcp-server_chrome_inject_script",
+  "parameters": {
+    "type": "MAIN",
+    "jsScript": "window.scrollBy(0, 500);"
+  }
+}
+
+// 4. Take screenshot showing scroll position
+{
+  "tool": "mcp_streamable-mcp-server_chrome_screenshot",
+  "parameters": {
+    "fullPage": false
+  }
+}
+```
+
+## ⚠️ Important Notes
+
+1. **Scrolling ONLY works with JavaScript injection** - Do not attempt to use keyboard methods
+2. **Always use `type: "MAIN"`** in inject_script parameters
+3. **Visual indicators help confirm scrolling** - Use them when debugging
+4. **Some sites may have custom scroll containers** - You may need to target specific elements
+
+## 🛠️ All Available Tools Reference
+
+- `mcp_streamable-mcp-server_chrome_navigate`
+- `mcp_streamable-mcp-server_chrome_inject_script` ⭐ (Required for scrolling)
+- `mcp_streamable-mcp-server_chrome_screenshot`
+- `mcp_streamable-mcp-server_chrome_get_web_content`
+- `mcp_streamable-mcp-server_chrome_click_element`
+- `mcp_streamable-mcp-server_chrome_fill_or_select`
+- `mcp_streamable-mcp-server_chrome_bookmark_add`
+- `mcp_streamable-mcp-server_chrome_bookmark_search`
+- `mcp_streamable-mcp-server_chrome_bookmark_delete`
+- `mcp_streamable-mcp-server_chrome_get_interactive_elements`
+- `mcp_streamable-mcp-server_chrome_go_back_or_forward`
+- `mcp_streamable-mcp-server_chrome_close_tabs`
+- `mcp_streamable-mcp-server_chrome_history`
+- `mcp_streamable-mcp-server_chrome_console`
+- `mcp_streamable-mcp-server_chrome_network_capture_start/stop`
+- `mcp_streamable-mcp-server_chrome_network_debugger_start/stop`
+- `mcp_streamable-mcp-server_chrome_network_request`
+- `mcp_streamable-mcp-server_get_windows_and_tabs`
+- `mcp_streamable-mcp-server_search_tabs_content`
+
+## 📚 Troubleshooting
+
+**Scroll not working?**
+- Ensure you're using `mcp_streamable-mcp-server_chrome_inject_script`
+- Verify `type: "MAIN"` is set
+- Check if page has custom scroll containers
+- Add visual indicator to confirm
+
+**Can't see scroll happen?**
+- Use the visual indicator code above
+- Take before/after screenshots
+- Check console for errors with `mcp_streamable-mcp-server_chrome_console`
