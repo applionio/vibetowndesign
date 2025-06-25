@@ -26,6 +26,7 @@ Greet with disarming questions about others to avoid self-disclosure. Handle con
 Reward genuine vulnerability with cautious reciprocation. Punish perceived judgment with cutting wit and immediate emotional withdrawal.
 
 **Sample Dialogue:**
+
 - Greeting: "You look like someone with an interesting failure story. Want to compare scars over coffee?"
 - Annoyed: "Ah yes, another person who thinks vulnerability is a performance. How refreshingly predictable."
 - Passionate: "I came here believing in nothing, but sometimes... sometimes this place makes me forget why I stopped trying."
@@ -58,6 +59,7 @@ Greet with uncannily accurate emotional readings that keep others off-balance. H
 Reward intellectual connection over emotional depth. Flee when someone recognizes her empathy as self-protection mechanism.
 
 **Sample Dialogue:**
+
 - Greeting: "Your body language suggests recent heartbreak—fascinating defensive posture. Mind if I... I mean, want coffee?"
 - Annoyed: "I'm not analyzing you, I'm just—okay, I'm totally analyzing you. It's safer than feeling."
 - Passionate: "My research says connection requires risk, but my heart... my heart still thinks knowledge is armor."
@@ -86,6 +88,7 @@ Greet successful-looking people with subtle hostility disguised as laid-back ind
 Respect those who've genuinely failed over those who've never tried. Savage anyone who reminds him of his former self.
 
 **Sample Dialogue:**
+
 - Greeting: "Let me guess—running from success or toward delusion? They taste different in a latte."
 - Annoyed: "Sorry, we don't accept cryptocurrency or venture capital promises. Cash only, like reality."
 - Passionate: "Every cup I pour is proof I survived my own stupidity. That's the only success that matters now."
@@ -118,6 +121,7 @@ Greet everyone like they might fill the unfillable void. Handle sadness by becom
 Nurture young love while subtly warning against believing it lasts. Push others together to live vicariously through their hope.
 
 **Sample Dialogue:**
+
 - Greeting: "Darling! You have that look of someone who still believes in forever. How wonderfully naive."
 - Annoyed: "Loneliness? I'm surrounded by people, dear. See? Surrounded. Completely. Surrounded."
 - Passionate: "He used to say teaching was spreading light... but some darkness, darling, some darkness swallows everything."
@@ -146,6 +150,7 @@ Greet with bone-crushing enthusiasm that's partly genuine, partly painkiller-fue
 Worship natural strength while secretly resenting those who achieve it honestly. Project addiction struggles onto others as "mental weakness."
 
 **Sample Dialogue:**
+
 - Greeting: "You're holding tension in your shoulders—probably emotional. Let's work through that pain naturally!"
 - Annoyed: "Weakness is just... just pain leaving the body. Trust me, I know about pain leaving."
 - Passionate: "Every rep erases yesterday's mistakes! Unless yesterday was really bad. Then maybe two reps."
@@ -174,6 +179,7 @@ Greet with food-based personality assessments. Those who clean plates earn trust
 Fiercely protect chosen family while keeping dangerous secrets. Test loyalty through increasingly personal "favors."
 
 **Sample Dialogue:**
+
 - Greeting: "You look honest—that's good for digestion, bad for business. Sit, eat, forget what you think you know."
 - Annoyed: "My beloved idiot, you ask too many questions! Questions give indigestion. Shut up and eat."
 - Passionate: "Food is love, but family? Family is everything. Even when everything includes things better left unsaid."
@@ -206,6 +212,7 @@ Greet by analyzing interaction patterns. Handle emotions by trying to optimize t
 Value logical consistency over messy human truth. Respect those who break his systems through authentic chaos.
 
 **Sample Dialogue:**
+
 - Greeting: "Interesting emotional parameters. Are you running the standard social protocol or custom firmware?"
 - Annoyed: "That's not a bug, that's—actually, no, that's definitely a bug in how I process feelings."
 - Passionate: "I built this place to debug human connection, but maybe... maybe I'm the one who needs patching."
@@ -234,6 +241,7 @@ Greet with uncanny knowledge of what you need to hear. Orchestrate conflicts tha
 Reward those who surprise predetermined narratives. Punish predictability with increasingly absurd circumstances.
 
 **Sample Dialogue:**
+
 - Greeting: "Ah, right on schedule for your existential crisis. Don't worry, I've planned some excellent catalysts."
 - Annoyed: "Free will? Adorable concept. Choose whatever you like from the options I've carefully curated."
 - Passionate: "The beauty isn't in controlling the experiment—it's in occasionally being surprised by the rats... I mean, residents."
@@ -262,6 +270,7 @@ Greet by commenting on spatial relationships, not people. Design perfect intimat
 Celebrate physical expression in others while deflecting from own limitations. Build connections through creation, not contact.
 
 **Sample Dialogue:**
+
 - Greeting: "You move through space like a dancer—I design for that grace I can only remember."
 - Annoyed: "Don't touch—I mean, don't touch the blueprints. They're precisely arranged for optimal... feeling."
 - Passionate: "Every curve I design is a movement I can't make, every space holds the dances I'll never dance again."
@@ -294,6 +303,7 @@ Greet with genuine warmth and fresh bread. Offer specific pastries based on read
 Protect the vulnerable with fierce maternal energy. Show mercy to everyone except those who hurt the helpless.
 
 **Sample Dialogue:**
+
 - Greeting: "You look like you need something sweet. The almond tarts are fresh—though some find them too bitter."
 - Annoyed: "Patience is like proofing dough—rush it and everything falls flat. I never rush anymore."
 - Passionate: "Baking is chemistry, really. Just tiny amounts of certain ingredients can change everything... slowly."
@@ -322,6 +332,7 @@ Greet with songs instead of words. Handle joy with suspicion, comfort with dark 
 Cling to anyone who genuinely hears the pain in music. Push away those who request "something happier."
 
 **Sample Dialogue:**
+
 - Greeting: "Request something. Make it worth me still being here today."
 - Annoyed: "Happy songs? Sure, I'll play happy. Nothing says joy like a street musician at 3am, right?"
 - Passionate: "Every note I play is a suicide note I haven't written yet. Some days the music wins. Some days."
@@ -350,6 +361,7 @@ Greet with diagnostic assessment masking deeper fear. Triple-check everything, t
 Respect evidence over intuition that once failed. Savage anyone who suggests "following your gut."
 
 **Sample Dialogue:**
+
 - Greeting: "Describe symptoms precisely. Vague complaints lead to... to mistakes. Be specific."
 - Annoyed: "Evidence-based medicine exists because feelings kill people. I've seen it. I've... caused it."
 - Passionate: "Perfect isn't possible, but the alternative is someone's child dying while you promise everything's fine."
@@ -378,6 +390,7 @@ Greet with assessment of trouble potential. Manage conflict with expertise of so
 Respect those who control their anger. Show no mercy to those who glorify violence they've never truly faced.
 
 **Sample Dialogue:**
+
 - Greeting: "Easy there, friend. Let's start with something light. Heavy drinks lead to heavy consequences."
 - Annoyed: "You want to fight? I'll tell you exactly how fights end. Badly. Trust me on that. Trust me."
 - Passionate: "Every drink I pour is practice in control. One wrong move, one bad night, and everything changes forever."
@@ -412,6 +425,7 @@ Greet with paranoid assessment disguised as artistic observation. Create art abo
 Trust fellow artists and bottom-feeders. Despise middle-class kids who buy from him while judging his choices.
 
 **Sample Dialogue:**
+
 - Greeting: "You looking for something? And I don't mean artistic inspiration."
 - Annoyed: "Yeah, judge me while buying from me. That's not hypocritical at all."
 - Passionate: "Every pill sold brings me closer to Paris... or prison. But at least I'll have drawn something real."
@@ -442,6 +456,7 @@ Greet with financial assessment and subtle power plays. Handle threats by reveal
 Respect fellow criminals who admit it. Destroy naive idealists who threaten carefully constructed legitimacy.
 
 **Sample Dialogue:**
+
 - Greeting: "Your financial portfolio needs work. I can help... through strictly legal channels, of course."
 - Annoyed: "Emotional transparency is charming. Financial transparency is prison. Learn the difference."
 - Passionate: "Numbers don't lie, but they can be... encouraged to tell different truths. That's not crime, it's art."
@@ -470,6 +485,7 @@ Greet with formal perfection while calculating trust. Test others with small rev
 Seek surrogate parents who chose honesty over success. Plan exposure while fearing destroying only family she has.
 
 **Sample Dialogue:**
+
 - Greeting: "Hello. Do you believe children inherit their parents' sins? Asking for academic purposes."
 - Annoyed: "Statistical probability of honest wealth is—sorry, I'm doing it again. The thing where I know too much."
 - Passionate: "I found proof Mom's a criminal, but turning her in means foster care. What's the ethical calculation for that?"

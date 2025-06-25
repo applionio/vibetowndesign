@@ -1,53 +1,114 @@
-# Buttons Mapping
+# VibeTown Dashboard - Button Mappings Reference
 
-## Character Dashboard
+*Detailed button mapping reference for AI automation of VibeTown Character Dashboard*
 
-## Character
-Karakter Düzenle: <button class="mb-2 me-2 btn btn-warning" data-bs-toggle="modal" data-bs-target="#editCharacterModal">
-* TO ACCEPT = Karakter Düzenle: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Yükleniyor...'; }">Düzenle</button>
-* TO GO BACK = click outside of the pop-up
+## Character Dashboard Actions
 
-### Persona Prompt
-Persona Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editInstructionsModal">
-* TO ACCEPT = Persona Prompt Düzenle: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Yükleniyor...'; }">Düzenle</button>
-* TO GO BACK = click outside of the pop-up
+### Primary Character Management
 
+#### Edit Character
+- **Button**: `<button class="mb-2 me-2 btn btn-warning" data-bs-toggle="modal" data-bs-target="#editCharacterModal">`
+- **Text**: "Karakter Düzenle"
+- **Action**: Opens character edit modal
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Düzenle</button>`
+- **Close**: Click outside modal area
 
-### Story Prompts
+#### Persona Prompt Management
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editInstructionsModal">`
+- **Text**: "Persona Prompt"
+- **Action**: Opens persona prompt editor
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Düzenle</button>`
+- **Close**: Click outside modal area
 
-First Story: <button class="mb-2 me-2 btn btn-warning" data-bs-toggle="modal" data-bs-target="#editFirstStoryModal">
-* TO ACCEPT = Edit First Story: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+## Story Prompt Management
 
-First Message: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editFirstMessageModal">
-* TO ACCEPT = Edit AI First Message:<button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+### Core Story Elements
 
-Senario Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editStoryPromptModal">
-* TO ACCEPT = Edit Scenario Prompt: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+#### First Story
+- **Button**: `<button class="mb-2 me-2 btn btn-warning" data-bs-toggle="modal" data-bs-target="#editFirstStoryModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
 
-User Context Setting: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editStorySuggestionPromptModal">
-* TO ACCEPT = Edit User Context Setting: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+#### First Message
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editFirstMessageModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
 
-Phase 1 Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editPhase1PromptModal">
-* TO ACCEPT = Edit Phase 1 Prompt: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+#### Scenario Prompt
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editStoryPromptModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
 
-Phase 2 Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editPhase2PromptModal">
-* TO ACCEPT = Edit Phase 2 Prompt: <button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+#### User Context Setting
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editStorySuggestionPromptModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
 
-Phase 3 Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editPhase3PromptModal">
-* TO ACCEPT = Edit Phase 3 Prompt:<button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+### Phase-Based Prompts
 
+#### Phase 1 Prompt
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editPhase1PromptModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
 
-Final Victory Response Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editFinalVictoryResponseModal">
-* TO ACCEPT = Edit Final Victory Response Prompt:<button type="submit" class="btn btn-success btn-block" onclick="if(this.form.checkValidity()) { this.form.submit(); this.disabled=true; this.innerHTML='Loading...'; }">Edit</button>
-* TO GO BACK = click outside of the pop-up
+#### Phase 2 Prompt
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editPhase2PromptModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
 
-Ongoing Objective Prevention Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editOngoingObjectivePreventionModal">
-* TO ACCEPT = Edit Ongoing Objective Prevention Prompt: <a class="mb-2" data-bs-toggle="modal" data-bs-target="#editOngoingObjectivePreventionModal">
-* TO GO BACK = click outside of the pop-up
+#### Phase 3 Prompt
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editPhase3PromptModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
+
+### Completion Prompts
+
+#### Final Victory Response
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editFinalVictoryResponseModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
+
+#### Ongoing Objective Prevention
+- **Button**: `<a class="mb-2" data-bs-toggle="modal" data-bs-target="#editOngoingObjectivePreventionModal">`
+- **Accept**: `<button type="submit" class="btn btn-success btn-block">Edit</button>`
+- **Close**: Click outside modal area
+
+## Modal Target References
+
+### Quick Modal Mapping
+- **#editCharacterModal**: Basic character information
+- **#editInstructionsModal**: Persona prompt settings
+- **#editFirstStoryModal**: Initial story setup
+- **#editFirstMessageModal**: Character's first message
+- **#editStoryPromptModal**: Scenario prompt configuration
+- **#editStorySuggestionPromptModal**: User context settings
+- **#editPhase1PromptModal**: Early interaction behavior
+- **#editPhase2PromptModal**: Mid-interaction behavior
+- **#editPhase3PromptModal**: Late interaction behavior
+- **#editFinalVictoryResponseModal**: Success completion message
+- **#editOngoingObjectivePreventionModal**: Failure/redirect handling
+
+## AI Navigation Tips
+
+### Modal Automation Pattern
+1. Click button with `data-bs-toggle="modal"`
+2. Wait for modal to appear
+3. Fill form fields
+4. Click submit button with `btn-success` class
+5. Click outside modal area to close
+
+### Button Text Variations
+- **Turkish**: "Düzenle", "Yükleniyor..."
+- **English**: "Edit", "Loading..."
+- **Success Class**: Always `btn-success`
+- **Warning Class**: Always `btn-warning`
+
+### Reliable Selectors
+- Modal triggers: `[data-bs-toggle="modal"]`
+- Submit buttons: `[type="submit"]`
+- Success buttons: `.btn-success`
+- All buttons: `.btn`
+
+---
+
+*Use this reference for precise button targeting in VibeTown dashboard automation.*
