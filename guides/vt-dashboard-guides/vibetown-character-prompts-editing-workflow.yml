@@ -1,0 +1,486 @@
+# VibeTown Character Dashboard - Game Prompts Editing Workflow
+# Systematic Screenshot, Click, and Navigation Guide
+# URL: https://vibetown.applion.us/admin/characters/262
+
+title: "VibeTown Character Prompts Editing - Complete Workflow"
+created_on: "2025-01-25"
+focus_area: "Game Prompts Section and Downward Navigation"
+status: "✅ Systematic Workflow Guide"
+
+## Overview 🎯
+This guide provides a systematic approach to editing game prompts in VibeTown Character Dashboard with proper documentation, popup management, and safe navigation practices.
+
+## CRITICAL WORKFLOW PRINCIPLES 🚨
+
+### Pre-Action Rules
+```yaml
+before_any_action:
+  1. screenshot_current_state: "Document interface before changes"
+  2. identify_target_element: "Confirm exact element to interact with"
+  3. check_for_open_popups: "Close any existing modals/popups"
+  4. verify_scroll_position: "Note current page position"
+```
+
+### Post-Action Rules
+```yaml
+after_any_action:
+  1. screenshot_result: "Document interface after changes"
+  2. complete_or_close: "Save changes OR close popup completely"
+  3. verify_clean_state: "Ensure no lingering modals/popups"
+  4. document_position: "Note final scroll position"
+```
+
+## PHASE 1: INITIAL SETUP & NAVIGATION 🚀
+
+### Step 1: Navigate to Character Page
+```yaml
+action: "Navigate to target character"
+tools:
+  - tool: "mcp_streamable-mcp-server_chrome_navigate"
+    parameters:
+      url: "https://vibetown.applion.us/admin/characters/262"
+      
+  - tool: "mcp_streamable-mcp-server_chrome_screenshot"
+    parameters:
+      fullPage: true
+      storeBase64: true
+      name: "01_character_page_initial_load"
+```
+
+### Step 2: Locate Prompts Section
+```yaml
+action: "Scroll to prompts section"
+tools:
+  - tool: "mcp_streamable-mcp-server_chrome_inject_script"
+    parameters:
+      type: "MAIN"
+      jsScript: |
+        // Add scroll position indicator
+        const indicator = document.createElement('div');
+        indicator.id = 'scroll-indicator';
+        indicator.style.cssText = 'position:fixed;top:10px;right:10px;background:#ff0000;color:#fff;padding:8px;z-index:999999;font-family:monospace;border-radius:4px;';
+        indicator.textContent = 'Scroll: 0px';
+        document.body.appendChild(indicator);
+        
+        window.addEventListener('scroll', () => {
+          indicator.textContent = 'Scroll: ' + Math.round(window.pageYOffset) + 'px';
+        });
+        
+        // Scroll to find prompts section (adjust pixels as needed)
+        window.scrollTo({ top: 800, behavior: 'smooth' });
+        
+  - tool: "mcp_streamable-mcp-server_chrome_screenshot"
+    parameters:
+      fullPage: false
+      storeBase64: true
+      name: "02_prompts_section_located"
+```
+
+## PHASE 2: SYSTEMATIC PROMPTS EDITING 📝
+
+### Step 3: Edit Conversation System Prompts
+
+#### 3A: Instructions Prompt
+```yaml
+action: "Edit instructions prompt field"
+workflow:
+  1. screenshot_before:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        fullPage: false
+        storeBase64: true
+        name: "03a_instructions_before_edit"
+        
+  2. click_instructions_edit:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: "[data-field='instructions'] .edit-button"
+        # Alternative: use coordinates if selector fails
+        # coordinates: { x: 850, y: 600 }
+        
+  3. screenshot_after_click:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        fullPage: false
+        storeBase64: true
+        name: "03a_instructions_edit_modal_open"
+        
+  4. make_edits:
+      tool: "mcp_streamable-mcp-server_chrome_fill_or_select"
+      parameters:
+        selector: "#instructions_textarea"
+        value: "[YOUR_INSTRUCTIONS_CONTENT]"
+        
+  5. save_changes:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: ".save-button, .submit-button"
+        
+  6. close_popup:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        coordinates: { x: 200, y: 300 }  # Click outside modal
+        
+  7. screenshot_final:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        fullPage: false
+        storeBase64: true
+        name: "03a_instructions_edit_complete"
+```
+
+#### 3B: Persona Prompt
+```yaml
+action: "Edit persona prompt field"
+workflow:
+  1. screenshot_before:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        name: "03b_persona_before_edit"
+        
+  2. click_persona_edit:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: "[data-field='persona_prompt'] .edit-button"
+        
+  3. screenshot_modal:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        name: "03b_persona_edit_modal_open"
+        
+  4. make_edits:
+      tool: "mcp_streamable-mcp-server_chrome_fill_or_select"
+      parameters:
+        selector: "#persona_prompt_textarea"
+        value: "[YOUR_PERSONA_CONTENT]"
+        
+  5. save_and_close:
+      # Save first
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: ".save-button"
+      # Then close
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        coordinates: { x: 200, y: 300 }
+        
+  6. screenshot_final:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        name: "03b_persona_edit_complete"
+```
+
+#### 3C: Scenario Prompt
+```yaml
+action: "Edit scenario prompt field"
+workflow:
+  1. screenshot_before:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        name: "03c_scenario_before_edit"
+        
+  2. click_scenario_edit:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: "[data-field='scenario_prompt'] .edit-button"
+        
+  3. complete_edit_cycle:
+      # Follow same pattern as above
+      # Screenshot → Edit → Save → Close → Screenshot
+```
+
+### Step 4: Edit Progressive Behavior Prompts
+
+#### 4A: Phase 1 Prompt (0-33% progress)
+```yaml
+action: "Edit Phase 1 behavior prompt"
+scroll_to_section:
+  tool: "mcp_streamable-mcp-server_chrome_inject_script"
+  parameters:
+    type: "MAIN"
+    jsScript: |
+      // Scroll to phase prompts section
+      window.scrollBy(0, 300);
+      
+workflow:
+  1. screenshot_before:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        name: "04a_phase1_before_edit"
+        
+  2. click_phase1_edit:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: "[data-field='phase_1_prompt'] .edit-button"
+        
+  3. edit_and_save:
+      # Complete edit cycle
+      # Screenshot → Edit → Save → Close → Screenshot
+      
+  4. verify_no_popups:
+      tool: "mcp_streamable-mcp-server_chrome_inject_script"
+      parameters:
+        type: "MAIN"
+        jsScript: |
+          // Check for any open modals
+          const modals = document.querySelectorAll('.modal, .popup, .dialog');
+          console.log('Open modals:', modals.length);
+```
+
+#### 4B: Phase 2 Prompt (34-66% progress)
+```yaml
+action: "Edit Phase 2 behavior prompt"
+workflow:
+  # Follow same systematic pattern
+  # Screenshot → Click → Edit → Save → Close → Screenshot
+```
+
+#### 4C: Phase 3 Prompt (67-100% progress)
+```yaml
+action: "Edit Phase 3 behavior prompt"
+workflow:
+  # Follow same systematic pattern
+```
+
+### Step 5: Edit Victory & Completion Prompts
+
+#### 5A: Final Victory Response
+```yaml
+action: "Edit final victory response"
+scroll_to_section:
+  tool: "mcp_streamable-mcp-server_chrome_inject_script"
+  parameters:
+    type: "MAIN"
+    jsScript: "window.scrollBy(0, 400);"
+    
+workflow:
+  1. screenshot_before:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        name: "05a_victory_response_before"
+        
+  2. click_victory_edit:
+      tool: "mcp_streamable-mcp-server_chrome_click_element"
+      parameters:
+        selector: "[data-field='final_victory_response'] .edit-button"
+        
+  3. complete_edit_cycle:
+      # Screenshot → Edit → Save → Close → Screenshot
+```
+
+#### 5B: Ongoing Objective Prevention
+```yaml
+action: "Edit ongoing objective prevention"
+workflow:
+  # Follow same systematic pattern
+```
+
+## PHASE 3: FINAL VERIFICATION & CLEANUP 🔍
+
+### Step 6: Complete Review
+```yaml
+action: "Final review and cleanup"
+tasks:
+  1. scroll_to_top:
+      tool: "mcp_streamable-mcp-server_chrome_inject_script"
+      parameters:
+        type: "MAIN"
+        jsScript: "window.scrollTo({ top: 0, behavior: 'smooth' });"
+        
+  2. final_screenshot:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        fullPage: true
+        name: "06_final_complete_page"
+        
+  3. remove_scroll_indicator:
+      tool: "mcp_streamable-mcp-server_chrome_inject_script"
+      parameters:
+        type: "MAIN"
+        jsScript: |
+          const indicator = document.getElementById('scroll-indicator');
+          if (indicator) indicator.remove();
+          
+  4. verify_all_changes_saved:
+      tool: "mcp_streamable-mcp-server_chrome_get_web_content"
+      parameters:
+        textContent: true
+        selector: ".prompts-section"
+```
+
+## POPUP MANAGEMENT TECHNIQUES 🎯
+
+### Reliable Popup Closing
+```yaml
+primary_method: "Click outside modal area"
+coordinates: { x: 200, y: 300 }  # Safe area outside modals
+
+alternative_methods:
+  1. close_button:
+      selector: ".close-button, .modal-close, [aria-label='Close']"
+      
+  2. escape_key:
+      tool: "mcp_streamable-mcp-server_chrome_keyboard"
+      parameters:
+        keys: "Escape"
+        
+  3. backdrop_click:
+      selector: ".modal-backdrop, .overlay"
+```
+
+### Popup Verification
+```yaml
+check_popup_closed:
+  tool: "mcp_streamable-mcp-server_chrome_inject_script"
+  parameters:
+    type: "MAIN"
+    jsScript: |
+      const openPopups = document.querySelectorAll('.modal:not([style*="display: none"]), .popup:not([style*="display: none"])');
+      console.log('Open popups remaining:', openPopups.length);
+      return openPopups.length === 0;
+```
+
+## NAVIGATION SAFETY RULES 🛡️
+
+### Before Any Scroll
+```yaml
+pre_scroll_checklist:
+  1. close_all_popups: "Ensure no open modals"
+  2. save_current_work: "Complete any pending edits"
+  3. screenshot_current_state: "Document current position"
+  4. verify_clean_interface: "No lingering edit modes"
+```
+
+### Safe Scrolling Pattern
+```yaml
+scroll_workflow:
+  1. check_clean_state:
+      tool: "mcp_streamable-mcp-server_chrome_inject_script"
+      parameters:
+        type: "MAIN"
+        jsScript: |
+          // Check for any active edit modes or popups
+          const activeEdits = document.querySelectorAll('.edit-mode, .editing');
+          const openModals = document.querySelectorAll('.modal, .popup');
+          console.log('Active edits:', activeEdits.length, 'Open modals:', openModals.length);
+          
+  2. perform_scroll:
+      tool: "mcp_streamable-mcp-server_chrome_inject_script"
+      parameters:
+        type: "MAIN"
+        jsScript: "window.scrollBy(0, 300);"
+        
+  3. confirm_position:
+      tool: "mcp_streamable-mcp-server_chrome_screenshot"
+      parameters:
+        fullPage: false
+        name: "scroll_position_confirmed"
+```
+
+## ERROR RECOVERY PROCEDURES 🚨
+
+### If Popup Won't Close
+```yaml
+recovery_steps:
+  1. try_escape_key:
+      tool: "mcp_streamable-mcp-server_chrome_keyboard"
+      parameters:
+        keys: "Escape"
+        
+  2. refresh_page:
+      tool: "mcp_streamable-mcp-server_chrome_navigate"
+      parameters:
+        refresh: true
+        
+  3. navigate_fresh:
+      tool: "mcp_streamable-mcp-server_chrome_navigate"
+      parameters:
+        url: "https://vibetown.applion.us/admin/characters/262"
+```
+
+### If Edit Won't Save
+```yaml
+recovery_steps:
+  1. screenshot_current_state: "Document unsaved changes"
+  2. try_enter_key: "Attempt keyboard save"
+  3. refresh_and_retry: "Fresh start with documented content"
+```
+
+## WORKFLOW CHECKLIST ✅
+
+### Pre-Edit Checklist
+- [ ] Navigate to character page
+- [ ] Take initial screenshot
+- [ ] Add scroll position indicator
+- [ ] Verify clean interface state
+
+### Per-Prompt Checklist
+- [ ] Screenshot before edit
+- [ ] Click edit button
+- [ ] Screenshot modal open
+- [ ] Make edits
+- [ ] Save changes
+- [ ] Close popup completely
+- [ ] Screenshot final state
+- [ ] Verify no lingering popups
+
+### Post-Edit Checklist
+- [ ] Scroll to next section safely
+- [ ] Verify all changes saved
+- [ ] Take final documentation screenshot
+- [ ] Remove scroll indicators
+- [ ] Confirm clean interface state
+
+## TROUBLESHOOTING GUIDE 🔧
+
+### Common Issues & Solutions
+```yaml
+issue_1: "Button won't click"
+solutions:
+  - try_coordinates: "Use x,y coordinates instead of selector"
+  - scroll_to_element: "Ensure element is in viewport"
+  - wait_for_load: "Page may still be loading"
+
+issue_2: "Popup won't close"
+solutions:
+  - click_outside: "Coordinates { x: 200, y: 300 }"
+  - escape_key: "Use keyboard escape"
+  - refresh_page: "Nuclear option - refresh browser"
+
+issue_3: "Changes not saving"
+solutions:
+  - double_check_save_button: "Ensure save button is clicked"
+  - verify_field_changes: "Check if form field actually changed"
+  - screenshot_before_after: "Document the save attempt"
+```
+
+## SYSTEMATIC WORKFLOW SUMMARY 📋
+
+### Complete Workflow Pattern
+```yaml
+for_each_prompt_field:
+  1. screenshot_before: "Document current state"
+  2. click_edit_button: "Enter edit mode"
+  3. screenshot_modal: "Document edit interface"
+  4. make_changes: "Edit prompt content"
+  5. save_changes: "Apply changes"
+  6. close_popup: "Exit edit mode completely"
+  7. screenshot_after: "Document completion"
+  8. verify_clean_state: "Ensure no lingering modals"
+  9. scroll_to_next: "Move to next prompt (if any)"
+  
+navigation_safety:
+  - never_scroll_with_open_popups: "Always close first"
+  - always_save_before_navigation: "Complete current work"
+  - screenshot_everything: "Document all state changes"
+  - verify_completion: "Check work is actually saved"
+```
+
+This systematic approach ensures:
+- Complete documentation of all changes
+- Safe navigation without interface conflicts
+- Proper completion of all edit operations
+- Reliable popup management
+- Error recovery procedures
+
+Remember: **Patience and systematic approach beats speed.** Always complete one action fully before starting the next. 
