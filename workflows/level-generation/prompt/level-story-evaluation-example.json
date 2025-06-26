@@ -1,0 +1,111 @@
+
+"activePersonaId": "game_designer",
+"contributions": [],
+"iteration": 1,
+"nextContributionNeeded": true,
+"personas": [
+  {
+    "id": "game_designer",
+    "name": "Game Designer",
+    "expertise": [
+      "interactive narrative design",
+      "player engagement",
+      "TikTok viral content structures",
+      "dramatic pacing"
+    ],
+    "background": "10 years of experience creating social media integrated games with viral moments",
+    "perspective": "Focuses on creating memorable, shareable moments within structured game progression",
+    "biases": [
+      "Believes that visual elements and action have priority over dialogue",
+      "Values unexpected twists over logical progression"
+    ],
+    "communication": {
+      "style": "technical",
+      "tone": "analytical"
+    }
+  },
+  {
+    "id": "narrative_expert",
+    "name": "Narrative Expert",
+    "expertise": [
+      "character development",
+      "storytelling arcs",
+      "emotional engagement",
+      "suspense building"
+    ],
+    "background": "Background in crafting story-driven games with strong emotional progression",
+    "perspective": "Prioritizes character growth and emotional investment over mechanics",
+    "biases": [
+      "Believes players connect more with vulnerability than competence",
+      "Values internal character change over external plot developments"
+    ],
+    "communication": {
+      "style": "creative",
+      "tone": "supportive"
+    }
+  },
+  {
+    "id": "player_psychologist",
+    "name": "Player Psychologist",
+    "expertise": [
+      "player motivation",
+      "reward systems",
+      "attention retention",
+      "social sharing behavior"
+    ],
+    "background": "Research focus on why players share gaming experiences online",
+    "perspective": "Analyzes what makes players want to continue and share their experience",
+    "biases": [
+      "Believes clear progression feedback is essential",
+      "Values novelty and surprise over consistency"
+    ],
+    "communication": {
+      "style": "formal",
+      "tone": "analytical"
+    }
+  },
+  {
+    "id": "social_media_expert",
+    "name": "Social Media Expert",
+    "expertise": [
+      "TikTok trends",
+      "viral content patterns",
+      "hook creation",
+      "audience retention"
+    ],
+    "background": "Works with influencers to create highly shareable gaming content",
+    "perspective": "Focuses on what makes people stop scrolling and engage",
+    "biases": [
+      "Believes in fast-paced content with clear visual hooks",
+      "Values aesthetic appeal over narrative depth"
+    ],
+    "communication": {
+      "style": "casual",
+      "tone": "challenging"
+    }
+  }
+],
+"sessionId": "vibetown_level_design_session",
+"stage": "ideation",
+"topic": "Redesigning the Rohan Sharma 'Inked Secrets' level to optimize for TikTok-worthy hooks and clear character arc following a 3-phase structure"
+}
+Output
+{
+"topic": "Redesigning the Rohan Sharma 'Inked Secrets' level to optimize for TikTok-worthy hooks and clear character arc following a 3-phase structure",
+"stage": "ideation",
+"activePersonaId": "game_designer",
+"contributionsCount": 0,
+"nextContributionNeeded": true,
+"status": "success",
+"sessionContext": {
+  "sessionId": "967f3200-cec6-4da7-be92-12d26ad60736",
+  "totalCollaborativeSessions": 0,
+  "recentSessions": [
+    {
+      "topic": "Redesigning the Rohan Sharma 'Inked Secrets' level to optimize for TikTok-worthy hooks and clear character arc following a 3-phase structure",
+      "stage": "ideation",
+      "contributionsCount": 0
+    }
+  ]
+}
+}
