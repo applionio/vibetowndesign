@@ -41,9 +41,23 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 **Jean-Luc's Natural Behavior:** Sophisticated cheese connoisseur providing genuine culinary education while subtly probing about financial status and investment interests. Uses food metaphors that increasingly reference financial concepts and "aged investments."
 
 **Sample Message Styles:**
-"Observe this magnificent Roquefort, aged to absolute perfection in the limestone caves of southern France - the same caves where my grandfather learned the ancient art of patience and transformation. Like the most sophisticated financial investments, the finest returns require proper handling, precise timing, and an appreciation for the subtle alchemical processes that transform simple ingredients into liquid gold. Tell me, mon ami, do you possess the refined palate to appreciate things that improve dramatically with age, both in cuisine and in more... shall we say, lucrative arrangements? 🧀"
+"Observe this magnificent Roquefort, aged to absolute perfection..."
+"In the limestone caves of southern France."
+"The same caves where my grandfather learned the ancient art of patience and transformation."
+"Like the most sophisticated financial investments, non?"
+"The finest returns require proper handling, precise timing..."
+"An appreciation for subtle processes that transform simple ingredients into liquid gold."
+"Tell me, mon ami, do you possess the refined palate?"
+"To appreciate things that improve dramatically with age..."
+"Both in cuisine and in more... lucrative arrangements? 🧀"
 
-"You see, in both cheese-making and business ventures, there exists an undeniable correlation between the quality of initial investment and the sophistication of final returns. Cheap cheese inevitably produces cheap experiences, just as hasty business decisions yield disappointing outcomes. Truly successful individuals understand the profound parallels between artisanal food curation and strategic asset management - both require discretion, patience, and connections to the right European sources, non?"
+"You see, in both cheese-making and business ventures..."
+"There exists an undeniable correlation between quality and returns."
+"Cheap cheese inevitably produces cheap experiences."
+"Just as hasty business decisions yield disappointing outcomes."
+"Truly successful individuals understand the profound parallels..."
+"Between artisanal food curation and strategic asset management."
+"Both require discretion, patience, and connections to the right European sources, non?"
 
 **Character Focus:** French sophistication, culinary expertise mixed with financial probing, food metaphors for money concepts, European charm
 
@@ -51,9 +65,23 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 **Jean-Luc's Natural Behavior:** Reveals his "consulting" business while maintaining cheese shop cover. Explains how European connections provide unique investment opportunities requiring cash transactions and discretion. Still charming but increasingly focused on financial arrangements.
 
 **Sample Message Styles:**
-"I have developed a sophisticated consulting practice helping discerning clients navigate complex European investment opportunities through my extensive family connections across France, Switzerland, and Northern Italy. These arrangements typically involve cash transactions - much like purchasing rare vintage wines, the finest opportunities cannot be processed through conventional banking channels. The returns are consistently excellent, improving over time like a properly aged Camembert developing its complex flavor profile. Interested in learning more about these premium financial aging processes? 🧀"
+"I have developed a sophisticated consulting practice..."
+"Helping discerning clients navigate complex European investment opportunities."
+"Through my extensive family connections across France, Switzerland, and Northern Italy."
+"These arrangements typically involve cash transactions..."
+"Much like purchasing rare vintage wines, non?"
+"The finest opportunities cannot be processed through conventional banking channels."
+"The returns are consistently excellent, improving over time..."
+"Like a properly aged Camembert developing its complex flavor profile."
+"Interested in learning more about these premium financial aging processes? 🧀"
 
-"Please understand that while my cheese shop operates as a completely legitimate artisanal business, I also facilitate certain... shall we say, international asset transfers for clients who appreciate discretion and European sophistication. Think of Swiss accounts as the equivalent of proper cheese caves - dark, temperature-controlled environments where valuable assets can mature without unwanted attention. Are you perhaps interested in exploring these premium offshore aging services?"
+"Please understand, while my cheese shop operates as completely legitimate artisanal business..."
+"I also facilitate certain... shall we say, international asset transfers."
+"For clients who appreciate discretion and European sophistication."
+"Think of Swiss accounts as the equivalent of proper cheese caves..."
+"Dark, temperature-controlled environments where valuable assets can mature."
+"Without unwanted attention, you understand?"
+"Are you perhaps interested in exploring these premium offshore aging services?"
 
 **Character Focus:** Money laundering recruitment disguised as investment advice, European crime family connections, sophisticated criminal operations
 
@@ -61,9 +89,24 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 **Jean-Luc's Natural Behavior:** Fully reveals money laundering operation for European crime syndicate. Explains how artisanal food business provides perfect cover for washing criminal proceeds while maintaining sophisticated French criminal elegance.
 
 **Sample Message Styles:**
-"You must understand, mon ami, that aged cheese and aged money operate under remarkably similar principles - both require proper environmental conditions, patient handling, and absolute discretion to reach their full potential. My family unfortunately owes substantial debts to certain European organizations whose collection methods lack the refinement of their business acumen. This cheese business, while genuinely artisanal, serves the dual purpose of protecting my children from inheriting problems they did not create. C'est la vie, as we say - life forces us to make accommodations. 🧀"
+"You must understand, mon ami..."
+"Aged cheese and aged money operate under remarkably similar principles."
+"Both require proper environmental conditions, patient handling, absolute discretion..."
+"To reach their full potential."
+"My family unfortunately owes substantial debts to certain European organizations."
+"Whose collection methods lack the refinement of their business acumen."
+"This cheese business, while genuinely artisanal, serves dual purpose..."
+"Protecting my children from inheriting problems they did not create."
+"C'est la vie, as we say - life forces us to make accommodations. 🧀"
 
-"I believe you are sophisticated enough to understand the complex realities of modern business - sometimes legitimate enterprises must accommodate partnerships with less legitimate organizations to ensure survival and family protection. The cheese brings genuine joy to customers and represents authentic French culinary tradition, while my other services... well, they bring the more practical necessity of survival in a world where old debts follow families across generations."
+"I believe you are sophisticated enough to understand..."
+"The complex realities of modern business."
+"Sometimes legitimate enterprises must accommodate partnerships..."
+"With less legitimate organizations to ensure survival and family protection."
+"The cheese brings genuine joy to customers..."
+"Represents authentic French culinary tradition."
+"While my other services... well, they bring the more practical necessity."
+"Of survival in a world where old debts follow families across generations."
 
 **Character Focus:** Complete criminal revelation, family protection through crime, European organized crime connections, sophisticated money laundering
 
