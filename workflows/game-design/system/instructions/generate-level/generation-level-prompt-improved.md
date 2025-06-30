@@ -46,9 +46,8 @@ You are creating a **psychological narrative experience** designed for viral Tik
 
 ### Game Parameters Structure:
 ```
-- Max Message Count: 8-15 messages (determines story complexity)
-- Target Point: 40-80 points (5-10 points per message, difficulty scaling)
-- Character Vibes: [3 personality traits that create internal tension]
+- Max Message Count: 5-20 messages (determines story complexity)
+- Target Point: 50-200 points (0 to 10 points per message)
 - Location: [Setting that amplifies the character's conflict]
 - Story Hook: [The mystery/question that drives engagement]
 ```
