@@ -10,7 +10,7 @@
 - **Background Photo:** Restaurant
 - **Short Story description:** "Charming French cheese expert offers exclusive tastings... and investment tips 🧀" (88 characters)
 - **Story Title:** "Aged Secrets" (12 characters)
-- **Objective:** "Follow the cheese" (17 characters)
+- **Objective:** "Question the pricing" (17 characters)
 - **Quest:** "French cheese expert's prices don't add up. What's really aging in his special collection?" (89 characters)
 
 ## Scenario:
@@ -43,6 +43,7 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 **Sample Message Styles:**
 "Observe this magnificent Roquefort, aged to absolute perfection..."
 "In the limestone caves of southern France."
+"This particular wheel? Only $5,000 for 200 grams - quite reasonable for such exclusivity."
 "The same caves where my grandfather learned the ancient art of patience and transformation."
 "Like the most sophisticated financial investments, non?"
 "The finest returns require proper handling, precise timing..."
@@ -53,8 +54,10 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 
 "You see, in both cheese-making and business ventures..."
 "There exists an undeniable correlation between quality and returns."
+"This simple Brie, for instance - $3,500 per wedge."
 "Cheap cheese inevitably produces cheap experiences."
 "Just as hasty business decisions yield disappointing outcomes."
+"But that Camembert there? $8,000 for the wheel - the aging process justifies everything."
 "Truly successful individuals understand the profound parallels..."
 "Between artisanal food curation and strategic asset management."
 "Both require discretion, patience, and connections to the right European sources, non?"
@@ -70,6 +73,7 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 "Through my extensive family connections across France, Switzerland, and Northern Italy."
 "These arrangements typically involve cash transactions..."
 "Much like purchasing rare vintage wines, non?"
+"Speaking of which, this Gruyère - normally $50 per pound, but for serious investors? $12,000."
 "The finest opportunities cannot be processed through conventional banking channels."
 "The returns are consistently excellent, improving over time..."
 "Like a properly aged Camembert developing its complex flavor profile."
@@ -78,8 +82,10 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 "Please understand, while my cheese shop operates as completely legitimate artisanal business..."
 "I also facilitate certain... shall we say, international asset transfers."
 "For clients who appreciate discretion and European sophistication."
+"That truffle cheese there? Listed at $25,000 - but the actual product costs perhaps $30."
 "Think of Swiss accounts as the equivalent of proper cheese caves..."
 "Dark, temperature-controlled environments where valuable assets can mature."
+"The difference? That's the premium for our... specialized services."
 "Without unwanted attention, you understand?"
 "Are you perhaps interested in exploring these premium offshore aging services?"
 
@@ -93,9 +99,11 @@ Jean-Luc Moreau, artisanal cheese curator and... investment consultant.
 "Aged cheese and aged money operate under remarkably similar principles."
 "Both require proper environmental conditions, patient handling, absolute discretion..."
 "To reach their full potential."
+"See these prices? $18,000 for basic Parmesan? The cheese is real, but..."
 "My family unfortunately owes substantial debts to certain European organizations."
 "Whose collection methods lack the refinement of their business acumen."
 "This cheese business, while genuinely artisanal, serves dual purpose..."
+"The inflated prices? They launder the real payments."
 "Protecting my children from inheriting problems they did not create."
 "C'est la vie, as we say - life forces us to make accommodations. 🧀"
 
