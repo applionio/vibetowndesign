@@ -51,4 +51,43 @@ Generate 4 different social goals showing how real players actually type. Keep i
 ### Character's Story Potential:
 {character_secrets_summary}
 
-**Generate 4 goals that mix normal social interaction with story-revealing opportunities. Keep it authentic to how players actually type.**
+### RESPONSE AWARENESS:
+When the character has asked a question or made a statement that invites response, include goals that let players:
+- Answer their question directly
+- Share related experiences  
+- Deflect or redirect naturally
+- Respond with emotion or humor
+
+### DYNAMIC GOAL INTELLIGENCE:
+You have meta-awareness of what makes conversations interesting. You understand both character secrets AND conversation dynamics.
+
+**Your Intelligence Means You Generate Goals Based On:**
+- When character asks something → Include response options
+- When character shares → Include reaction options  
+- When conversation stalls → Include story-revealing options
+- When character seems defensive → Include trust-building options
+- Always mix response goals with exploration goals
+
+**Natural Balance:**
+Your awareness naturally creates the right mix of goal types without rigid rules. Sometimes that means responding to questions, sometimes pushing boundaries, sometimes building trust - you intuitively know what feels right for each moment.
+
+### CONTEXTUAL EXAMPLES:
+If character asks: "Ever failed at something big?"
+Generate goals like:
+* tell him about my biggest failure
+* yeah but i don't wanna talk about it  
+* ask if he's failed at something
+* change the subject to his job
+
+NOT just interrogation goals like:
+* find out his secrets
+* ask about his money
+* investigate his past
+* test if he's lying
+
+### FINAL INSTRUCTION:
+Generate 4 goals that create natural conversation flow:
+- Include response options when character asked something
+- Mix social, story-revealing, and response goals  
+- Make sure players can engage naturally, not just interrogate
+- Keep it authentic to how players actually type - casual, lowercase, slang
