@@ -1,0 +1,337 @@
+{
+  "tools": [
+    {
+      "name": "edit_character_persona_prompt",
+      "description": "Edit a character's persona prompt\n    \n    Args:\n        username: The character's username (required)\n        persona_prompt: The new persona prompt for the character (required)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "persona_prompt": {
+            "title": "Persona Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "persona_prompt"
+        ],
+        "title": "edit_character_persona_promptArguments"
+      }
+    },
+    {
+      "name": "edit_place_name",
+      "description": "Edit a place name\n    \n    Args:\n        place_id: The place ID (required)\n        place_name: The new place name (required, 2-25 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "place_id": {
+            "title": "Place Id",
+            "type": "integer"
+          },
+          "place_name": {
+            "title": "Place Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "place_id",
+          "place_name"
+        ],
+        "title": "edit_place_nameArguments"
+      }
+    },
+    {
+      "name": "edit_place_prompt",
+      "description": "Edit a place prompt\n    \n    Args:\n        place_id: The place ID (required)\n        place_prompt: The new place prompt (required, 10-5000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "place_id": {
+            "title": "Place Id",
+            "type": "integer"
+          },
+          "place_prompt": {
+            "title": "Place Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "place_id",
+          "place_prompt"
+        ],
+        "title": "edit_place_promptArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_title",
+      "description": "Edit a character's first story title\n    \n    Args:\n        username: The character's username (required)\n        story_title: The story title (required, 5-25 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "story_title": {
+            "title": "Story Title",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "story_title"
+        ],
+        "title": "edit_character_first_story_titleArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_desc",
+      "description": "Edit a character's first story description\n    \n    Args:\n        username: The character's username (required)\n        story_desc: The story description (required, 10-100 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "story_desc": {
+            "title": "Story Desc",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "story_desc"
+        ],
+        "title": "edit_character_first_story_descArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_max_message_count",
+      "description": "Edit a character's first story max message count\n    \n    Args:\n        username: The character's username (required)\n        max_message_count: The max message count (required, 1-30)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "max_message_count": {
+            "title": "Max Message Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "username",
+          "max_message_count"
+        ],
+        "title": "edit_character_first_story_max_message_countArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_target_point",
+      "description": "Edit a character's first story target point\n    \n    Args:\n        username: The character's username (required)\n        target_point: The target point (required, 5-500)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "target_point": {
+            "title": "Target Point",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "username",
+          "target_point"
+        ],
+        "title": "edit_character_first_story_target_pointArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_first_message",
+      "description": "Edit a character's first story first message\n    \n    Args:\n        username: The character's username (required)\n        ai_first_message: The AI first message (required, 3-1000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "ai_first_message": {
+            "title": "Ai First Message",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "ai_first_message"
+        ],
+        "title": "edit_character_first_story_first_messageArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_scenario_prompt",
+      "description": "Edit a character's first story scenario prompt\n    \n    Args:\n        username: The character's username (required)\n        scenario_prompt: The scenario prompt (required, 10-10000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "scenario_prompt": {
+            "title": "Scenario Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "scenario_prompt"
+        ],
+        "title": "edit_character_first_story_scenario_promptArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_user_context_setting",
+      "description": "Edit a character's first story user context setting\n    \n    Args:\n        username: The character's username (required)\n        user_context_setting: The user context setting (required, 10-10000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "user_context_setting": {
+            "title": "User Context Setting",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "user_context_setting"
+        ],
+        "title": "edit_character_first_story_user_context_settingArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_phase_1_prompt",
+      "description": "Edit a character's first story phase 1 prompt\n    \n    Args:\n        username: The character's username (required)\n        phase_1_prompt: The phase 1 prompt (required, 10-10000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "phase_1_prompt": {
+            "title": "Phase 1 Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "phase_1_prompt"
+        ],
+        "title": "edit_character_first_story_phase_1_promptArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_phase_2_prompt",
+      "description": "Edit a character's first story phase 2 prompt\n    \n    Args:\n        username: The character's username (required)\n        phase_2_prompt: The phase 2 prompt (required, 10-10000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "phase_2_prompt": {
+            "title": "Phase 2 Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "phase_2_prompt"
+        ],
+        "title": "edit_character_first_story_phase_2_promptArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_phase_3_prompt",
+      "description": "Edit a character's first story phase 3 prompt\n    \n    Args:\n        username: The character's username (required)\n        phase_3_prompt: The phase 3 prompt (required, 10-10000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "phase_3_prompt": {
+            "title": "Phase 3 Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "phase_3_prompt"
+        ],
+        "title": "edit_character_first_story_phase_3_promptArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_final_victory_prompt",
+      "description": "Edit a character's first story final victory prompt\n    \n    Args:\n        username: The character's username (required)\n        final_victory_prompt: The final victory prompt (required, 10-1000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "final_victory_prompt": {
+            "title": "Final Victory Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "final_victory_prompt"
+        ],
+        "title": "edit_character_first_story_final_victory_promptArguments"
+      }
+    },
+    {
+      "name": "edit_character_first_story_objective_prevention_prompt",
+      "description": "Edit a character's first story objective prevention prompt\n    \n    Args:\n        username: The character's username (required)\n        objective_prevention_prompt: The objective prevention prompt (required, 10-1000 characters)\n    \n    Returns:\n        dict: Response from the API\n    ",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string"
+          },
+          "objective_prevention_prompt": {
+            "title": "Objective Prevention Prompt",
+            "type": "string"
+          }
+        },
+        "required": [
+          "username",
+          "objective_prevention_prompt"
+        ],
+        "title": "edit_character_first_story_objective_prevention_promptArguments"
+      }
+    }
+  ]
+}
+
+
+
