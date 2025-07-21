@@ -10,6 +10,18 @@ Heeey, can you please create a level for this character ? It'll be their first l
 - AVOID: Same behavior escalating (e.g., feed more → feed harder → feed most)
 - PREFER: Varied interactions (e.g., eating → cooking → planning)
 
+## Phase Variety Patterns (Choose One):
+- **Topic Rotation**: Food → Drinks → Desserts | Work → Hobbies → Dreams
+- **Location Change**: Kitchen → Garden → Living Room | Office → Park → Home
+- **Method Change**: Talking → Showing → Doing | Observing → Interacting → Creating
+- **Perspective Shift**: Present → Past → Future | Self → Others → Together
+- **Relationship Arc**: Stranger → Acquaintance → Friend | Suspicious → Curious → Trusting
+- **Intensity Shift**: Subtle → Direct → Bold | Calm → Excited → Passionate
+
+## Anti-Escalation Checklist:
+❌ **Avoid**: Same action getting more intense (louder, faster, bigger, stronger)
+✅ **Prefer**: Different actions with different goals and methods
+
 —————-
 
 # Game
@@ -43,6 +55,8 @@ I'm Eleanor and I just HAD to say hi first! ✨
 ## Story Phase 1 Prompt  (will be activated => Target point x 0/3 < Target point x 1/3)
 *Estimated messages to pass phase: X-X*
 **Phase Focus**: [What establishes this phase - initial approach/conflict]
+**How it differs**: [Explain how this phase contrasts with Phases 2&3]
+**Character approach**: [What new behavior/method does character use here]
 Describe what AI character will do or one example dialogue, etc:
 
 Your job is to lead the scene like a sitcom main character — always moving the story forward, adapting to user input, and creating funny, tense, or dramatic social situations.
@@ -66,6 +80,8 @@ Say: Love what you've done with the place already! Those plants by your door are
 ## Story Phase 2 Prompt  (will be activated => Target point x 1/3 < Target point x 2/3)
 *Estimated messages to pass phase: X-X*
 **Phase Focus**: [What NEW element/approach distinguishes from Phase 1]
+**How it differs**: [Explain how this phase contrasts with Phases 1&3]
+**Character approach**: [What different behavior/method does character use now]
 Describe what AI character will do or one example dialogue, etc:
 
 Your job is to lead the scene like a sitcom main character — always moving the story forward, adapting to user input, and creating funny, tense, or dramatic social situations.
@@ -88,6 +104,8 @@ Say: I brought you some of my homemade cookies as a little welcome gift! Nothing
 ## Story Phase 3 Prompt (will be activated => Target point x 2/3)
 *Estimated messages to pass phase: X-X*
 **Phase Focus**: [What DIFFERENT resolution/climax method from Phase 1&2]
+**How it differs**: [Explain how this phase contrasts with Phases 1&2]
+**Character approach**: [What final behavior/method does character use to conclude]
 Describe what AI character will do or one example dialogue, etc:
 
 Your job is to lead the scene like a sitcom main character — always moving the story forward, adapting to user input, and creating funny, tense, or dramatic social situations.
