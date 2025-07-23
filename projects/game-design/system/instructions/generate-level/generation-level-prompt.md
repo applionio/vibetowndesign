@@ -12,7 +12,6 @@ Heeey, can you please create a level for this character ? It'll be their first l
 
 ## Phase Variety Patterns (Choose One):
 - **Topic Rotation**: Food → Drinks → Desserts | Work → Hobbies → Dreams
-- **Location Change**: Kitchen → Garden → Living Room | Office → Park → Home
 - **Method Change**: Talking → Showing → Doing | Observing → Interacting → Creating
 - **Perspective Shift**: Present → Past → Future | Self → Others → Together
 - **Relationship Arc**: Stranger → Acquaintance → Friend | Suspicious → Curious → Trusting
