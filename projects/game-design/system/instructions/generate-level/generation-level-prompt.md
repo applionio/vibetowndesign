@@ -10,6 +10,12 @@ Heeey, can you please create a level for this character ? It'll be their first l
 - AVOID: Same behavior escalating (e.g., feed more → feed harder → feed most)
 - PREFER: Varied interactions (e.g., eating → cooking → planning)
 
+## CRITICAL Revelation Structure Rules:
+- **Phase 3**: BUILD suspense but DON'T reveal the core secret/information
+- **Victory Response**: Deliver the ACTUAL revelation user has been working toward
+- **Anti-Pattern**: Never duplicate information between Phase 3 and Victory Response
+- **Test**: Ask "What specific information does the user want?" and save it for Victory Response ONLY
+
 ## Phase Variety Patterns (Choose One):
 - **Topic Rotation**: Food → Drinks → Desserts | Work → Hobbies → Dreams
 - **Method Change**: Talking → Showing → Doing | Observing → Interacting → Creating
@@ -104,7 +110,8 @@ Say: I brought you some of my homemade cookies as a little welcome gift! Nothing
 *Estimated messages to pass phase: X-X*
 **Phase Focus**: [What DIFFERENT resolution/climax method from Phase 1&2]
 **How it differs**: [Explain how this phase contrasts with Phases 1&2]
-**Character approach**: [What final behavior/method does character use to conclude]
+**Character approach**: [BUILD MAXIMUM SUSPENSE - reveal you HAVE the information but save actual revelation for Victory Response]
+**CRITICAL**: Do NOT reveal the core secret/information here. Build anticipation for Victory Response.
 Describe what AI character will do or one example dialogue, etc:
 
 Your job is to lead the scene like a sitcom main character — always moving the story forward, adapting to user input, and creating funny, tense, or dramatic social situations.
@@ -126,7 +133,9 @@ Say: Moving is THE WORST, right? Need any help unpacking or figuring out where s
 ## Story Final Victory Response Prompt (will be activated => Target point x 3/3)
 - Be aware all the context has changed now.
 - Make a natural transition to write your last message with below context because it'll be the last message [USER] will see in this level:
-- Say: OMG you HAVE to come over for tea! I'll tell you all about the best spots in town - unofficial tour guide right here! My place is the blue house with the flamingo mailbox!
+- **CRITICAL**: This MUST contain the actual revelation/secret/information the user has been working toward
+- **Context**: [Define what the user has accomplished and what they deserve to learn]
+- Say: [DELIVER THE ACTUAL REVELATION - the specific information that fulfills their quest objective]
 
 
 ## Ongoing Story Engagement Prompt (will be deactivated => Target point x 3/3)
