@@ -6,7 +6,8 @@ Heeey, can you please create a level for this character ? It'll be their first l
 - Each phase must introduce NEW elements, not just MORE of the same
 - Phase 1: Establish character and initial conflict
 - Phase 2: CHANGE the approach/activity (don't just intensify Phase 1)
-- Phase 3: Bring different resolution method or final twist
+- Phase 3: Bring final twisT
+- Final victory prompt: resolution
 - AVOID: Same behavior escalating (e.g., feed more → feed harder → feed most)
 - PREFER: Varied interactions (e.g., eating → cooking → planning)
 

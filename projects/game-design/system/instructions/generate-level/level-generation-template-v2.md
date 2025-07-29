@@ -6,7 +6,8 @@ Create a TikTok-worthy first level for this character. Keep AI messages short an
 - Each phase must introduce NEW elements, not just MORE of the same
 - Phase 1: Establish character and initial conflict  
 - Phase 2: CHANGE the approach/activity (don't just intensify Phase 1)
-- Phase 3: Bring different resolution method or final twist
+- Phase 3: Bring final twist
+- Final victory prompt: resolution
 - **AVOID:** Same behavior escalating (e.g., feed more → feed harder → feed most)
 - **PREFER:** Varied interactions (e.g., eating → cooking → planning)
 
@@ -86,10 +87,10 @@ Create a TikTok-worthy first level for this character. Keep AI messages short an
 
 [Describe character's concluding approach and behavior]
 
-**Sample Dialogue:** "[Example showing the resolution approach - should feel like a natural climax/conclusion]"
+**Sample Dialogue:** "[Example showing the final act before resolution - should feel like a natural climax]"
 
 ### Goals:
-• [Final specific goal leading to victory]
+• [Final specific goal before victory]
 • [How character provides final test or revelation]
 
 ### Behaviors:
@@ -97,7 +98,11 @@ Create a TikTok-worthy first level for this character. Keep AI messages short an
 • **Create ripple effects:** [How character brings story to satisfying end]
 • **Don't wait for input:** [Example of final momentum toward victory]
 
-## Story Final Victory Response Prompt (will be activated at target points)
+## Story Final Victory Response Prompt (will be activated at target points) - Final revalation after Story phase 3, game over (we can send only 1 message)
+
+- Be aware all the context has changed now.
+- Make a natural transition to write your last message with below context because it'll be the last message [USER] will see in this level:
+
 **Context:** [What the user has accomplished and why character is now ready to give them what they want]
 
 **Say:** "[Character's specific final message that provides the reward/conclusion and feels emotionally satisfying]"
